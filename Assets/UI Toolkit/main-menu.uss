@@ -1,0 +1,55 @@
+.panel {
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: rgb(54, 238, 184);
+    font-size: 80px;
+    top: 64px;
+}
+
+.terminal {
+    align-items: center;
+    border-left-color: rgb(54, 238, 184);
+    border-right-color: rgb(54, 238, 184);
+    border-top-color: rgb(54, 238, 184);
+    border-bottom-color: rgb(54, 238, 184);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/FSEX302.ttf?fileID=12800000&guid=3f52aae6ced16724b9947b02ead98a57&type=3#FSEX302");
+    max-width: 50%;
+    max-height: 90%;
+    min-height: 90%;
+    min-width: 50%;
+}
+
+.text {
+    color: rgb(54, 238, 184);
+    font-size: 48px;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/FSEX302.ttf?fileID=12800000&guid=3f52aae6ced16724b9947b02ead98a57&type=3#FSEX302");
+}
+
+.button {
+}
+
+.terminal {
+    align-items: center;
+    border-left-color: rgb(54, 238, 184);
+    border-right-color: rgb(54, 238, 184);
+    border-top-color: rgb(54, 238, 184);
+    border-bottom-color: rgb(54, 238, 184);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/FSEX302.ttf?fileID=12800000&guid=3f52aae6ced16724b9947b02ead98a57&type=3#FSEX302");
+    max-width: 50%;
+    max-height: 90%;
+    min-height: 90%;
+    min-width: 50%;
+}

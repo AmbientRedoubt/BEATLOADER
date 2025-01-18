@@ -1,1 +1,3 @@
-# You Are The Weapon
+# >/BEATLOADER
+
+\>/BEATLOADER is a text-based, ASCII rhythm game.

@@ -1,7 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MainMenuManager : MonoBehaviour {
+    [SerializeField] private UIDocument _document;
+
     private void Awake() {
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
     }

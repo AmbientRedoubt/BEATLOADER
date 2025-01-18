@@ -19,11 +19,17 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Start() {
+        DisableMouseCursor();
         UpdateGameState(GameState.MainMenu);
     }
 
     private void Update() {
 
+    }
+
+    private void DisableMouseCursor() {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void UpdateGameState(GameState newState) {

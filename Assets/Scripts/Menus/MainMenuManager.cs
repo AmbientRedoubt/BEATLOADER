@@ -13,6 +13,7 @@ public class MainMenuManager : MonoBehaviour {
 
     private void Awake() {
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
+        GameManager.UpdateGameState(GameState.MainMenu);
     }
 
     private void OnEnable() {
@@ -28,14 +29,14 @@ public class MainMenuManager : MonoBehaviour {
 
     private void OnStartButtonClicked() {
         AudioManager.PlayOneShot(_clickSound);
-        // GameManager.Instance.UpdateGameState(GameState.Playing);
+        GameManager.UpdateGameState(GameState.Playing);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TestLevel");
     }
 
     private void OnSettingsButtonClicked() {
         AudioManager.PlayOneShot(_clickSound);
         throw new NotImplementedException();
     }
-
 
     private void OnCreditsButtonClicked() {
         AudioManager.PlayOneShot(_clickSound);
@@ -51,7 +52,6 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     private void GameManagerOnStateChanged(GameState state) {
-        Debug.Log($"Game state changed to {state}");
     }
 
     private void OnDestroy() {

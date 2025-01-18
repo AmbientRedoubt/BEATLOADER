@@ -3,7 +3,11 @@
     <engine:VisualElement name="Background" style="flex-grow: 1; justify-content: center; align-items: center; background-color: rgb(0, 0, 0);">
         <engine:VisualElement name="VisualElement" class="terminal" style="flex-grow: 1;">
             <engine:Label text="PAUSED" class="title" />
-            <engine:VisualElement style="flex-grow: 1; width: 257px;" />
+            <engine:VisualElement name="ButtonsContainer" style="flex-grow: 1; margin-top: 158px; width: 362px;">
+                <engine:Button text="RESUME" name="ResumeButton" class="button" />
+                <engine:Button text="SETTINGS" name="SettingsButton" class="button" />
+                <engine:Button text="QUIT" name="QuitButton" class="button" />
+            </engine:VisualElement>
         </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

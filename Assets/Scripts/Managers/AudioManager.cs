@@ -18,7 +18,6 @@ public class AudioManager : MonoBehaviour {
         }
         else {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -40,6 +39,29 @@ public class AudioManager : MonoBehaviour {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         _eventInstances.Add(eventInstance);
         return eventInstance;
+    }
+
+    public static void CleanUpOne(EventInstance eventInstance, FMOD.Studio.STOP_MODE stopMode) {
+        eventInstance.getDescription(out EventDescription eventDescription);
+        eventDescription.getPath(out string path);
+
+        if (stopMode == FMOD.Studio.STOP_MODE.IMMEDIATE) {
+            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+        else if (stopMode == FMOD.Studio.STOP_MODE.ALLOWFADEOUT) {
+            eventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+        eventInstance.release();
+    }
+
+    public static void CleanUp() {
+        // Debug.Log("Cleaning up audio");
+        if (_eventInstances.Count == 0) return;
+        foreach (EventInstance eventInstance in _eventInstances) {
+            CleanUpOne(eventInstance, FMOD.Studio.STOP_MODE.IMMEDIATE);
+            eventInstance.release();
+        }
+        _eventInstances.Clear();
     }
 
     private void TogglePauseGame(GameState state) {

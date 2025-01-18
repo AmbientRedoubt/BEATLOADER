@@ -9,7 +9,6 @@ public class AudioSettingsManager : MonoBehaviour {
         }
         else {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
     }
 

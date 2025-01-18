@@ -16,13 +16,12 @@ public class GameManager : MonoBehaviour {
         }
         else {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
     }
 
     private void Start() {
         // DisableMouseCursor();
-        UpdateGameState(GameState.MainMenu);
+        // UpdateGameState(GameState.MainMenu);
     }
 
     private void DisableMouseCursor() {
@@ -30,26 +29,32 @@ public class GameManager : MonoBehaviour {
         Cursor.visible = false;
     }
 
-    public void UpdateGameState(GameState newState) {
+    public static void UpdateGameState(GameState newState) {
         CurrentState = newState;
 
         switch (newState) {
             case GameState.MainMenu:
                 break;
             case GameState.Playing:
-                TogglePauseGame();
+                Time.timeScale = 1;
                 break;
             case GameState.Paused:
-                TogglePauseGame();
+                Time.timeScale = 0;
                 break;
             case GameState.GameOver:
                 break;
         }
         OnGameStateChanged?.Invoke(newState);
+        Debug.Log($"Game state changed to {newState}");
     }
 
-    private void TogglePauseGame() {
-        Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+    public static void TogglePauseGame() {
+        if (CurrentState == GameState.Paused) {
+            UpdateGameState(GameState.Playing);
+        }
+        else {
+            UpdateGameState(GameState.Paused);
+        }
     }
 }
 

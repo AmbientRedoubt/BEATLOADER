@@ -3,7 +3,6 @@ using FMODUnity;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-
 public class MainMenuManager : MonoBehaviour {
     [SerializeField] private UIDocument _document;
     private Button _startButton;
@@ -50,12 +49,12 @@ public class MainMenuManager : MonoBehaviour {
         Application.Quit();
     }
 
-    private void OnDestroy() {
-        GameManager.OnGameStateChanged -= GameManagerOnStateChanged;
-    }
-
     private void GameManagerOnStateChanged(GameState state) {
         Debug.Log($"Game state changed to {state}");
         // throw new NotImplementedException();
+    }
+
+    private void OnDestroy() {
+        GameManager.OnGameStateChanged -= GameManagerOnStateChanged;
     }
 }

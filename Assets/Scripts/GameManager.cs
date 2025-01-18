@@ -19,12 +19,8 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Start() {
-        DisableMouseCursor();
+        // DisableMouseCursor();
         UpdateGameState(GameState.MainMenu);
-    }
-
-    private void Update() {
-
     }
 
     private void DisableMouseCursor() {

@@ -14,6 +14,7 @@ public class MainMenuManager : MonoBehaviour {
     private void Awake() {
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
     }
+
     private void OnEnable() {
         _startButton = _document.rootVisualElement.Q("StartButton") as Button;
         _startButton.clicked += OnStartButtonClicked;
@@ -51,7 +52,6 @@ public class MainMenuManager : MonoBehaviour {
 
     private void GameManagerOnStateChanged(GameState state) {
         Debug.Log($"Game state changed to {state}");
-        // throw new NotImplementedException();
     }
 
     private void OnDestroy() {

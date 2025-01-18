@@ -1,13 +1,15 @@
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 /// <summary>
 /// GameManager handles the game state.
 /// </summary>
 public class GameManager : MonoBehaviour {
-    public static GameManager Instance { get; private set; }
-    public GameState CurrentState { get; private set; }
+    public static GameState CurrentState { get; private set; }
     public static event Action<GameState> OnGameStateChanged;
+    public static GameManager Instance { get; private set; }
+
     private void Awake() {
         if (Instance != null && Instance != this) {
             Destroy(this);
@@ -35,13 +37,19 @@ public class GameManager : MonoBehaviour {
             case GameState.MainMenu:
                 break;
             case GameState.Playing:
+                TogglePauseGame();
                 break;
             case GameState.Paused:
+                TogglePauseGame();
                 break;
             case GameState.GameOver:
                 break;
         }
         OnGameStateChanged?.Invoke(newState);
+    }
+
+    private void TogglePauseGame() {
+        Time.timeScale = Time.timeScale == 0 ? 1 : 0;
     }
 }
 

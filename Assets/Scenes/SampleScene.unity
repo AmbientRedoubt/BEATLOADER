@@ -499,6 +499,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _document: {fileID: 1611456001}
+  _clickSound:
+    Guid:
+      Data1: -1110841821
+      Data2: 1153855220
+      Data3: 376949923
+      Data4: 826650496
+    Path: event:/Click
 --- !u!1 &1668410797
 GameObject:
   m_ObjectHideFlags: 0

@@ -383,7 +383,7 @@ MonoBehaviour:
   sourceProjectPath: ../you-are-the-weapon-FMOD/you-are-the-weapon-FMOD.fspro
   sourceBankPath: ../you-are-the-weapon-FMOD/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0

@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/style.uss?fileID=7433441132597879392&amp;guid=8d1492521ac9d9c448c0c845838b8625&amp;type=3#style" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(0, 0, 0); align-items: center; justify-content: center;">
+        <ui:VisualElement name="MainMenu" class="landingScreen terminal">
+            <ui:Label text="SETTINGS" name="Title" class="heading title" style="-unity-text-align: middle-center;" />
+            <ui:VisualElement name="Sliders" style="flex-grow: 1; height: 232px;">
+                <ui:Label text="Volume" class="text" style="top: 145px;" />
+                <ui:Slider label="Master" value="42" high-value="100" name="MasterSlider" class="slider" style="width: 303px; top: 161px;" />
+                <ui:Slider label="Music" value="42" high-value="100" name="MusicSlider" class="slider" style="width: 303px; top: 161px;" />
+                <ui:Slider label="SFX" value="42" high-value="100" name="SFXSlider" class="slider" style="width: 303px; top: 161px;" />
+            </ui:VisualElement>
+            <ui:Toggle label="Disable Screen Shake" class="text" style="top: -105px;" />
+            <ui:Button text="BACK" name="BackButton" class="button" style="top: -44px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

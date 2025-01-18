@@ -2,8 +2,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using FMODUnity;
 using FMOD.Studio;
-using UnityEditor;
-using System;
 
 /// <summary>
 /// AudioManager handles audio playback.

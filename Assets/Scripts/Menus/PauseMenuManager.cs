@@ -21,7 +21,6 @@ public class PauseMenuManager : MonoBehaviour {
         _settingsButton.clicked += OnSettingsButtonClicked;
         _quitButton = _document.rootVisualElement.Q("QuitButton") as Button;
         _quitButton.clicked += OnQuitButtonClicked;
-        _document.rootVisualElement.visible = false;
     }
 
     private void OnResumeButtonClicked() {

@@ -1,6 +1,5 @@
 using UnityEngine;
 using System;
-using UnityEngine.UI;
 
 /// <summary>
 /// GameManager handles the game state.
@@ -24,13 +23,20 @@ public class GameManager : MonoBehaviour {
         // UpdateGameState(GameState.MainMenu);
     }
 
-    private void DisableMouseCursor() {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+    private static void ToggleMouseCursor() {
+        if (CurrentState != GameState.Playing) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     public static void UpdateGameState(GameState newState) {
         CurrentState = newState;
+        ToggleMouseCursor();
 
         switch (newState) {
             case GameState.MainMenu:

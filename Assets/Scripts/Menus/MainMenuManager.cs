@@ -7,7 +7,6 @@ public class MainMenuManager : MonoBehaviour {
     [SerializeField] private UIDocument _document;
     private Button _startButton;
     private Button _settingsButton;
-    private Button _creditsButton;
     private Button _quitButton;
     [field: SerializeField] private EventReference _clickSound;
 
@@ -21,8 +20,6 @@ public class MainMenuManager : MonoBehaviour {
         _startButton.clicked += OnStartButtonClicked;
         _settingsButton = _document.rootVisualElement.Q("SettingsButton") as Button;
         _settingsButton.clicked += OnSettingsButtonClicked;
-        _creditsButton = _document.rootVisualElement.Q("CreditsButton") as Button;
-        _creditsButton.clicked += OnCreditsButtonClicked;
         _quitButton = _document.rootVisualElement.Q("QuitButton") as Button;
         _quitButton.clicked += OnQuitButtonClicked;
     }
@@ -34,11 +31,6 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     private void OnSettingsButtonClicked() {
-        AudioManager.PlayOneShot(_clickSound);
-        throw new NotImplementedException();
-    }
-
-    private void OnCreditsButtonClicked() {
         AudioManager.PlayOneShot(_clickSound);
         throw new NotImplementedException();
     }

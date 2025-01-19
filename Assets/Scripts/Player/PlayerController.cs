@@ -39,6 +39,5 @@ public class PlayerController : MonoBehaviour {
         else {
             _canvas.enabled = false;
         }
-        Debug.Log("Escape pressed");
     }
 }

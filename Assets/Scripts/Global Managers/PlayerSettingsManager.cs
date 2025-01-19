@@ -13,7 +13,7 @@ public class PlayerSettingsManager : MonoBehaviour {
     [SerializeField] private static Bus _SFXBus;
     private static float _masterVolume;
     private static float _musicVolume;
-    private static float _sfxVolume;
+    private static float _SFXVolume;
     private static bool _screenShakeEnabled;
     private static bool _flashEffectsEnabled;
     private static bool _CRTModeEnabled;
@@ -24,6 +24,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         set {
             _masterVolume = value;
             PlayerPrefs.SetFloat("MasterVolume", _masterVolume);
+            PlayerPrefs.Save();
             _masterBus.setVolume(_masterVolume);
         }
     }
@@ -33,16 +34,18 @@ public class PlayerSettingsManager : MonoBehaviour {
         set {
             _musicVolume = value;
             PlayerPrefs.SetFloat("MusicVolume", _musicVolume);
+            PlayerPrefs.Save();
             _musicBus.setVolume(_musicVolume);
         }
     }
 
     public static float SFXVolume {
-        get { return _sfxVolume; }
+        get { return _SFXVolume; }
         set {
-            _sfxVolume = value;
-            PlayerPrefs.SetFloat("SFXVolume", _sfxVolume);
-            _SFXBus.setVolume(_sfxVolume);
+            _SFXVolume = value;
+            PlayerPrefs.SetFloat("SFXVolume", _SFXVolume);
+            PlayerPrefs.Save();
+            _SFXBus.setVolume(_SFXVolume);
         }
     }
 
@@ -51,6 +54,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         set {
             _screenShakeEnabled = value;
             PlayerPrefs.SetInt("ScreenShakeEnabled", _screenShakeEnabled ? 1 : 0);
+            PlayerPrefs.Save();
         }
     }
 
@@ -59,6 +63,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         set {
             _flashEffectsEnabled = value;
             PlayerPrefs.SetInt("FlashEffectsEnabled", _flashEffectsEnabled ? 1 : 0);
+            PlayerPrefs.Save();
         }
     }
 
@@ -67,6 +72,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         set {
             _CRTModeEnabled = value;
             PlayerPrefs.SetInt("CRTModeEnabled", _CRTModeEnabled ? 1 : 0);
+            PlayerPrefs.Save();
             SetCRTMode(_CRTModeEnabled);
         }
     }
@@ -103,15 +109,15 @@ public class PlayerSettingsManager : MonoBehaviour {
 
     private void LoadSavedVolumeSettings() {
         _masterBus = RuntimeManager.GetBus("bus:/");
-        MasterVolume = PlayerPrefs.GetFloat("MasterVolume", 1);
+        _masterVolume = PlayerPrefs.GetFloat("MasterVolume", 1);
         _masterBus.setVolume(MasterVolume);
 
         _musicBus = RuntimeManager.GetBus("bus:/Music");
-        MusicVolume = PlayerPrefs.GetFloat("MusicVolume", 1);
+        _musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1);
         _musicBus.setVolume(MusicVolume);
 
         _SFXBus = RuntimeManager.GetBus("bus:/SFX");
-        SFXVolume = PlayerPrefs.GetFloat("SFXVolume", 1);
+        _SFXVolume = PlayerPrefs.GetFloat("SFXVolume", 1);
         _SFXBus.setVolume(SFXVolume);
     }
 
@@ -127,5 +133,9 @@ public class PlayerSettingsManager : MonoBehaviour {
         if (_VHSProRendererFeature != null) {
             _VHSProRendererFeature.SetActive(enabled);
         }
+    }
+
+    private void OnDestroy() {
+        PlayerPrefs.Save();
     }
 }

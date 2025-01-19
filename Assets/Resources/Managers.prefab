@@ -85,6 +85,13 @@ MonoBehaviour:
       Data3: 376949923
       Data4: 826650496
     Path: event:/UI/On Click
+  _settingsSound:
+    Guid:
+      Data1: 318213299
+      Data2: 1078904039
+      Data3: -364719980
+      Data4: -645787151
+    Path: event:/UI/On Settings Change
 --- !u!1 &7062980932949692331
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +103,7 @@ GameObject:
   - component: {fileID: 6012503426207656217}
   - component: {fileID: 8562356398071066401}
   m_Layer: 0
-  m_Name: AudioSettingsManager
+  m_Name: PlayerSettingsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

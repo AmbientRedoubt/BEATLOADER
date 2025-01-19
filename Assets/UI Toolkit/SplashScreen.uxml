@@ -1,9 +1,0 @@
-<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/main-menu.uss?fileID=7433441132597879392&amp;guid=8d1492521ac9d9c448c0c845838b8625&amp;type=3#main-menu" />
-    <engine:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(0, 0, 0); justify-content: center; align-items: center;">
-        <engine:VisualElement name="Terminal" class="terminal" style="flex-grow: 1;">
-            <engine:Label text="&gt;/BEATLOADER" name="Title" class="title" />
-            <engine:Label text="PRESS ANY BUTTON" name="Press" class="text" style="top: 250px;" />
-        </engine:VisualElement>
-    </engine:VisualElement>
-</engine:UXML>

@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 [RequireComponent(typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour {
-    [SerializeField] private UIDocument _document;
+    [SerializeField] private Canvas _canvas;
     public static PlayerController Instance { get; private set; }
 
     private void Awake() {
@@ -35,10 +34,10 @@ public class PlayerController : MonoBehaviour {
     private void OnEscape() {
         GameManager.TogglePauseGame();
         if (GameManager.CurrentState == GameState.Paused) {
-            _document.rootVisualElement.visible = true;
+            _canvas.enabled = true;
         }
         else {
-            _document.rootVisualElement.visible = false;
+            _canvas.enabled = false;
         }
         Debug.Log("Escape pressed");
     }

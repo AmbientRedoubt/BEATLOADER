@@ -78,6 +78,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db1a75e399c1464fbfaed0f430ca2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickSound:
+    Guid:
+      Data1: -1110841821
+      Data2: 1153855220
+      Data3: 376949923
+      Data4: 826650496
+    Path: event:/UI/On Click
 --- !u!1 &7062980932949692331
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,11 +2,13 @@ using UnityEngine;
 using System.Collections.Generic;
 using FMODUnity;
 using FMOD.Studio;
+using Unity.VisualScripting;
 
 /// <summary>
 /// AudioManager handles audio playback.
 /// </summary>
 public class AudioManager : MonoBehaviour {
+    [SerializeField] private EventReference _clickSound;
     private static List<EventInstance> _eventInstances;
     public static AudioManager Instance { get; private set; }
 
@@ -26,6 +28,10 @@ public class AudioManager : MonoBehaviour {
 
     public static void PlayOneShot(EventReference eventInstance) {
         RuntimeManager.PlayOneShot(eventInstance);
+    }
+
+    public static void PlayOnClickSound() {
+        PlayOneShot(Instance._clickSound);
     }
 
     public static EventInstance CreateEventInstance(EventReference eventReference) {

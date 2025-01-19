@@ -1,28 +1,26 @@
 using System;
-using FMODUnity;
 using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour {
-    [field: SerializeField] private EventReference _clickSound;
+    [SerializeField] private GameObject _mainMenu;
+    [SerializeField] private GameObject _settingsMenu;
 
     private void Awake() {
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
         GameManager.UpdateGameState(GameState.MainMenu);
     }
 
-    public void OnStartButtonClicked() {
-        AudioManager.PlayOneShot(_clickSound);
-        GameManager.UpdateGameState(GameState.Playing);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("TestLevel");
+    private void Start() {
+        _mainMenu.SetActive(true);
+        _settingsMenu.SetActive(false);
     }
 
-    public void OnSettingsButtonClicked() {
-        AudioManager.PlayOneShot(_clickSound);
-        throw new NotImplementedException();
+    public void OnStartButtonClicked() {
+        GameManager.UpdateGameState(GameState.Playing);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ZeroDay");
     }
 
     public void OnQuitButtonClicked() {
-        AudioManager.PlayOneShot(_clickSound);
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif

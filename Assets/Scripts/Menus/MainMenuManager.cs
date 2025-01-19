@@ -4,6 +4,7 @@ using UnityEngine;
 public class MainMenuManager : MonoBehaviour {
     [SerializeField] private GameObject _mainMenu;
     [SerializeField] private GameObject _settingsMenu;
+    [SerializeField] private GameObject _creditsMenu;
 
     private void Awake() {
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
@@ -13,6 +14,7 @@ public class MainMenuManager : MonoBehaviour {
     private void Start() {
         _mainMenu.SetActive(true);
         _settingsMenu.SetActive(false);
+        _creditsMenu.SetActive(false);
     }
 
     public void OnStartButtonClicked() {

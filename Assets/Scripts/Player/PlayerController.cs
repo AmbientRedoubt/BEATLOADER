@@ -34,16 +34,24 @@ public class PlayerController : MonoBehaviour {
 
     }
 
+    private void OnUp() {
+        Debug.Log("Up");
+    }
 
+    private void OnDown() {
+        Debug.Log("Down");
+    }
 
-    private void OnJump() {
+    private void OnSpace() {
         // AudioManager.PlayOneShot(Instance._jumpSound);
+        Debug.Log("Space");
         Shaker.ShakeAll(_jumpShake);
     }
 
     private void OnAttack() {
         // Likely we won't need this action but keeping for testing purposes
         // AudioManager.PlayOneShot(Instance._attackSound);
+        Debug.Log("Attack");
         Shaker.ShakeAll(_crashShake);
     }
 

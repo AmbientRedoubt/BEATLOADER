@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f52aae6ced16724b9947b02ead98a57
+guid: 86b221eafa81ad04b8ae2dac41a37ca8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Fixedsys Excelsior
+  - Beatloader
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

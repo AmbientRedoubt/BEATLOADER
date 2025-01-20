@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   skipIterations:
     m_OverrideState: 0
     m_Value: 1
@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   scatter:
     m_OverrideState: 1
     m_Value: 0.7
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   mode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 2
   neutralHDRRangeReductionMode:
     m_OverrideState: 0
@@ -190,17 +190,17 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   noiseResWidth:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 640
   noiseResHeight:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 480
   filmgrainOn:
     m_OverrideState: 1
     m_Value: 1
   filmGrainAmount:
     m_OverrideState: 1
-    m_Value: 0.03
+    m_Value: 0.082
   signalNoiseOn:
     m_OverrideState: 1
     m_Value: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 2
   feedbackFade:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.82
   feedbackColor:
     m_OverrideState: 0
@@ -363,6 +363,34 @@ MonoBehaviour:
   scale:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &-1405391761287729664
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.371
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.383
+  rounded:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,3 +408,4 @@ MonoBehaviour:
   - {fileID: -4216239852830313464}
   - {fileID: -5078515937416321916}
   - {fileID: -4499982572922139799}
+  - {fileID: -1405391761287729664}

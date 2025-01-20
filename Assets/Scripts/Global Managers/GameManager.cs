@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour {
 
         switch (newState) {
             case GameState.MainMenu:
+                Time.timeScale = 1;
                 break;
             case GameState.Playing:
                 Time.timeScale = 1;

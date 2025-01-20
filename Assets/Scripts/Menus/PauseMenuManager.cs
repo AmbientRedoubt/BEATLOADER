@@ -25,7 +25,7 @@ public class PauseMenuManager : MonoBehaviour {
         GameManager.UpdateGameState(GameState.Playing);
     }
 
-    public void OnQuitButtonClicked() {
+    public void OnMainMenuButtonClicked() {
         GameManager.UpdateGameState(GameState.MainMenu);
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }

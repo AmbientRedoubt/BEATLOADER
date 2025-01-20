@@ -36,10 +36,12 @@ public class PlayerController : MonoBehaviour {
 
     private void OnUp() {
         Debug.Log("Up");
+        Shaker.ShakeAll(_jumpShake);
     }
 
     private void OnDown() {
         Debug.Log("Down");
+        Shaker.ShakeAll(_jumpShake);
     }
 
     private void OnSpace() {

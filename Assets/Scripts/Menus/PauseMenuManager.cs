@@ -1,8 +1,16 @@
-using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour {
     [SerializeField] private Canvas _canvas;
+    [SerializeField] private RawImage _backgroundImage;
+    [SerializeField] private Outline _canvasOutline;
+    [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _countdownModal;
+    [SerializeField] private TMP_Text _countdownText;
+    private const float COUNTDOWN_DURATION = 3f;
 
     private void Awake() {
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
@@ -10,18 +18,46 @@ public class PauseMenuManager : MonoBehaviour {
 
     private void Start() {
         _canvas.enabled = false;
+        _backgroundImage.enabled = true;
+        _canvasOutline.enabled = true;
+        _pauseMenu.SetActive(true);
+        _countdownModal.SetActive(false);
     }
 
+    /// <summary>
+    /// Show/hide the pause menu when the game state changes.
+    /// </summary>
+    /// <param name="state"></param>
     private void GameManagerOnStateChanged(GameState state) {
         if (state == GameState.Paused) {
             _canvas.enabled = true;
+            _backgroundImage.enabled = true;
+            _canvasOutline.enabled = true;
+            _pauseMenu.SetActive(true);
+            _countdownModal.SetActive(false);
         }
         else {
-            _canvas.enabled = false;
+            // _canvas.enabled = false;
         }
     }
 
     public void OnResumeButtonClicked() {
+        _countdownModal.SetActive(true);
+        _pauseMenu.SetActive(false);
+        _backgroundImage.enabled = false;
+        _canvasOutline.enabled = false;
+        StartCoroutine(CountdownToResume());
+    }
+
+    private IEnumerator CountdownToResume() {
+        for (float i = COUNTDOWN_DURATION; i > 0; i--) {
+            _countdownText.text = i.ToString();
+            AudioManager.PlayCountdownSound();
+            yield return new WaitForSecondsRealtime(1f);
+        }
+        Debug.Log("Resuming game...");
+        _countdownModal.SetActive(false);
+        _canvas.enabled = false;
         GameManager.UpdateGameState(GameState.Playing);
     }
 

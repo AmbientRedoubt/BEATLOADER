@@ -26,6 +26,7 @@ public class MainMenuManager : MonoBehaviour {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+        // Application.OpenURL("https://ambientredoubt.itch.io/beatloader");
         Application.Quit();
     }
 

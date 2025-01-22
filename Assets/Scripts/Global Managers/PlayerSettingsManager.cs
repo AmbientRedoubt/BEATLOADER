@@ -8,9 +8,10 @@ using UnityEngine.Rendering;
 /// NIGHTMARE SCRIPT AHHHHHHH
 /// </summary>
 public class PlayerSettingsManager : MonoBehaviour {
-    [SerializeField] private static Bus _masterBus;
-    [SerializeField] private static Bus _musicBus;
-    [SerializeField] private static Bus _SFXBus;
+    private const int MAX_VOLUME = 1;
+    private static Bus _masterBus;
+    private static Bus _musicBus;
+    private static Bus _SFXBus;
     private static float _masterVolume;
     private static float _musicVolume;
     private static float _SFXVolume;
@@ -49,6 +50,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         }
     }
 
+    //TODO: Implement screen shake toggle
     public static bool ScreenShakeEnabled {
         get { return _screenShakeEnabled; }
         set {
@@ -84,13 +86,22 @@ public class PlayerSettingsManager : MonoBehaviour {
         }
         else {
             Instance = this;
+            LoadFMODBanks();
+            LoadSavedVolumeSettings();
+            LoadSavedToggleSettings();
         }
     }
 
     private void Start() {
         FindVHSProRendererFeature();
-        LoadSavedVolumeSettings();
-        LoadSavedToggleSettings();
+    }
+
+    private void LoadFMODBanks() {
+        RuntimeManager.LoadBank("Master", true);
+        RuntimeManager.LoadBank("Music", true);
+        RuntimeManager.LoadBank("SFX", true);
+        RuntimeManager.WaitForAllSampleLoading();
+        Debug.Log("FMOD banks loaded");
     }
 
     private void FindVHSProRendererFeature() {
@@ -109,15 +120,15 @@ public class PlayerSettingsManager : MonoBehaviour {
 
     private void LoadSavedVolumeSettings() {
         _masterBus = RuntimeManager.GetBus("bus:/");
-        _masterVolume = PlayerPrefs.GetFloat("MasterVolume", 1);
+        _masterVolume = PlayerPrefs.GetFloat("MasterVolume", MAX_VOLUME);
         _masterBus.setVolume(MasterVolume);
 
         _musicBus = RuntimeManager.GetBus("bus:/Music");
-        _musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1);
+        _musicVolume = PlayerPrefs.GetFloat("MusicVolume", MAX_VOLUME);
         _musicBus.setVolume(MusicVolume);
 
         _SFXBus = RuntimeManager.GetBus("bus:/SFX");
-        _SFXVolume = PlayerPrefs.GetFloat("SFXVolume", 1);
+        _SFXVolume = PlayerPrefs.GetFloat("SFXVolume", MAX_VOLUME);
         _SFXBus.setVolume(SFXVolume);
     }
 

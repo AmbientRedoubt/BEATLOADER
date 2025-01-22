@@ -92,6 +92,13 @@ MonoBehaviour:
       Data3: -364719980
       Data4: -645787151
     Path: event:/UI/On Settings Change
+  _countdownSound:
+    Guid:
+      Data1: 937830133
+      Data2: 1141785634
+      Data3: 335632815
+      Data4: -284590021
+    Path: event:/UI/Countdown
 --- !u!1 &7062980932949692331
 GameObject:
   m_ObjectHideFlags: 0

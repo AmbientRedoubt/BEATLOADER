@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 public class AudioManager : MonoBehaviour {
     [SerializeField] private EventReference _clickSound;
     [SerializeField] private EventReference _settingsSound;
+    [SerializeField] private EventReference _countdownSound;
     private static List<EventInstance> _eventInstances;
     public static AudioManager Instance { get; private set; }
 
@@ -39,6 +40,10 @@ public class AudioManager : MonoBehaviour {
         PlayOneShot(Instance._settingsSound);
     }
 
+    public static void PlayCountdownSound() {
+        PlayOneShot(Instance._countdownSound);
+    }
+
     public static EventInstance CreateEventInstance(EventReference eventReference) {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         return eventInstance;
@@ -51,9 +56,6 @@ public class AudioManager : MonoBehaviour {
     }
 
     public static void CleanUpOne(EventInstance eventInstance, FMOD.Studio.STOP_MODE stopMode) {
-        eventInstance.getDescription(out EventDescription eventDescription);
-        eventDescription.getPath(out string path);
-
         if (stopMode == FMOD.Studio.STOP_MODE.IMMEDIATE) {
             eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }

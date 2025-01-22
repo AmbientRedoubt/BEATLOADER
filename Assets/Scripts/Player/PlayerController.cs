@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour {
-    [SerializeField] private Canvas _canvas;
     [SerializeField] private ShakePreset _crashShake;
     [SerializeField] private ShakePreset _jumpShake;
     public static PlayerController Instance { get; private set; }
@@ -59,11 +58,5 @@ public class PlayerController : MonoBehaviour {
 
     private void OnEscape() {
         GameManager.TogglePauseGame();
-        if (GameManager.CurrentState == GameState.Paused) {
-            _canvas.enabled = true;
-        }
-        else {
-            _canvas.enabled = false;
-        }
     }
 }

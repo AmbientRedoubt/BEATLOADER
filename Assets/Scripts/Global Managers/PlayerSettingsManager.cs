@@ -86,7 +86,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         }
         else {
             Instance = this;
-            LoadFMODBanks();
+            // LoadFMODBanks();
             LoadSavedVolumeSettings();
             LoadSavedToggleSettings();
         }

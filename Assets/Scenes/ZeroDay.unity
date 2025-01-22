@@ -1554,13 +1554,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074778994f738104db982d823eb326f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _music:
+  _musicTrack:
     Guid:
-      Data1: 554888333
-      Data2: 1281632952
-      Data3: 52707765
-      Data4: -1133497613
-    Path: event:/Music/thumper_triangle
+      Data1: 341049330
+      Data2: 1134027055
+      Data3: 64080535
+      Data4: -132481852
+    Path: event:/Music/music_pause_test
+  _musicBackingTrack:
+    Guid:
+      Data1: 1937836345
+      Data2: 1126401305
+      Data3: -716646510
+      Data4: -785312076
+    Path: event:/Music/music_pause_test_backing
 --- !u!1 &1602996525
 GameObject:
   m_ObjectHideFlags: 0

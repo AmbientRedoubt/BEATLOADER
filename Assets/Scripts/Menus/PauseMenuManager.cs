@@ -24,21 +24,18 @@ public class PauseMenuManager : MonoBehaviour {
         _countdownModal.SetActive(false);
     }
 
-    /// <summary>
-    /// Show/hide the pause menu when the game state changes.
-    /// </summary>
-    /// <param name="state"></param>
     private void GameManagerOnStateChanged(GameState state) {
-        if (state == GameState.Paused) {
-            AudioManager.PausedSnapShotInstance.start();
-            _canvas.enabled = true;
-            _backgroundImage.enabled = true;
-            _canvasOutline.enabled = true;
-            _pauseMenu.SetActive(true);
-            _countdownModal.SetActive(false);
-        }
-        else {
-            // _canvas.enabled = false;
+        switch (state) {
+            case GameState.Playing:
+                // _canvas.enabled = false;
+                break;
+            case GameState.Paused:
+                _canvas.enabled = true;
+                _backgroundImage.enabled = true;
+                _canvasOutline.enabled = true;
+                _pauseMenu.SetActive(true);
+                _countdownModal.SetActive(false);
+                break;
         }
     }
 
@@ -59,12 +56,10 @@ public class PauseMenuManager : MonoBehaviour {
         Debug.Log("Resuming game...");
         _countdownModal.SetActive(false);
         _canvas.enabled = false;
-        AudioManager.Stop(AudioManager.PausedSnapShotInstance);
         GameManager.UpdateGameState(GameState.Playing);
     }
 
     public void OnMainMenuButtonClicked() {
-        AudioManager.Stop(AudioManager.PausedSnapShotInstance);
         GameManager.UpdateGameState(GameState.MainMenu);
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }

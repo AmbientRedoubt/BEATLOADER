@@ -14,4 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrackName: 
   BPM: 0
-  KeyInputs: []
+  KeyInputs:
+  - Time: 1.28
+    InputAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 3.04
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 6.58
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 13.55
+    InputAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

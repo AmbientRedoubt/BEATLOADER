@@ -11,8 +11,8 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] private EventReference _settingsSound;
     [SerializeField] private EventReference _countdownSound;
     [SerializeField] private EventReference _pausedSnapshot;
+    private static EventInstance _pausedSnapshotInstance;
     private static List<EventInstance> _eventInstances;
-    public static EventInstance PausedSnapShotInstance { get; private set; }
     public static AudioManager Instance { get; private set; }
 
     private void Awake() {
@@ -21,12 +21,11 @@ public class AudioManager : MonoBehaviour {
         }
         else {
             Instance = this;
+            GameManager.OnGameStateChanged += TogglePauseGame;
         }
     }
 
     private void Start() {
-        // GameManager.OnGameStateChanged += TogglePauseGame;
-        PausedSnapShotInstance = CreateEventInstance(_pausedSnapshot);
         _eventInstances = new List<EventInstance>();
     }
 
@@ -82,16 +81,20 @@ public class AudioManager : MonoBehaviour {
     }
 
     private void TogglePauseGame(GameState state) {
-        if (state == GameState.Paused) {
-            foreach (EventInstance eventInstance in _eventInstances) {
-                eventInstance.setPaused(true);
-            }
-        }
-
-        else {
-            foreach (EventInstance eventInstance in _eventInstances) {
-                eventInstance.setPaused(false);
-            }
+        switch (state) {
+            case GameState.Playing:
+                Stop(_pausedSnapshotInstance);
+                // foreach (EventInstance eventInstance in _eventInstances) {
+                //     eventInstance.setPaused(false);
+                // }
+                break;
+            case GameState.Paused:
+                _pausedSnapshotInstance = CreateEventInstance(_pausedSnapshot);
+                _pausedSnapshotInstance.start();
+                // foreach (EventInstance eventInstance in _eventInstances) {
+                //     eventInstance.setPaused(true);
+                // }
+                break;
         }
     }
 

@@ -30,6 +30,7 @@ public class PauseMenuManager : MonoBehaviour {
     /// <param name="state"></param>
     private void GameManagerOnStateChanged(GameState state) {
         if (state == GameState.Paused) {
+            AudioManager.PausedSnapShotInstance.start();
             _canvas.enabled = true;
             _backgroundImage.enabled = true;
             _canvasOutline.enabled = true;
@@ -58,10 +59,12 @@ public class PauseMenuManager : MonoBehaviour {
         Debug.Log("Resuming game...");
         _countdownModal.SetActive(false);
         _canvas.enabled = false;
+        AudioManager.Stop(AudioManager.PausedSnapShotInstance);
         GameManager.UpdateGameState(GameState.Playing);
     }
 
     public void OnMainMenuButtonClicked() {
+        AudioManager.Stop(AudioManager.PausedSnapShotInstance);
         GameManager.UpdateGameState(GameState.MainMenu);
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }

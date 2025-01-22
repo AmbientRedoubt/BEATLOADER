@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using FMODUnity;
 using FMOD.Studio;
-using Unity.VisualScripting;
 
 /// <summary>
 /// AudioManager handles audio playback.
@@ -11,7 +10,9 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] private EventReference _clickSound;
     [SerializeField] private EventReference _settingsSound;
     [SerializeField] private EventReference _countdownSound;
+    [SerializeField] private EventReference _pausedSnapshot;
     private static List<EventInstance> _eventInstances;
+    public static EventInstance PausedSnapShotInstance { get; private set; }
     public static AudioManager Instance { get; private set; }
 
     private void Awake() {
@@ -24,7 +25,8 @@ public class AudioManager : MonoBehaviour {
     }
 
     private void Start() {
-        GameManager.OnGameStateChanged += TogglePauseGame;
+        // GameManager.OnGameStateChanged += TogglePauseGame;
+        PausedSnapShotInstance = CreateEventInstance(_pausedSnapshot);
         _eventInstances = new List<EventInstance>();
     }
 
@@ -53,6 +55,10 @@ public class AudioManager : MonoBehaviour {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         _eventInstances.Add(eventInstance);
         return eventInstance;
+    }
+
+    public static void Stop(EventInstance eventInstance) {
+        eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     public static void CleanUpOne(EventInstance eventInstance, FMOD.Studio.STOP_MODE stopMode) {

@@ -99,6 +99,13 @@ MonoBehaviour:
       Data3: 335632815
       Data4: -284590021
     Path: event:/UI/Countdown
+  _pausedSnapshot:
+    Guid:
+      Data1: -1744845647
+      Data2: 1182985761
+      Data3: -860244343
+      Data4: -66679009
+    Path: snapshot:/Paused Snapshot
 --- !u!1 &7062980932949692331
 GameObject:
   m_ObjectHideFlags: 0

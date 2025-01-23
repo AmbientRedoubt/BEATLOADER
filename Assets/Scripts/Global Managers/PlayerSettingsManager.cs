@@ -1,16 +1,17 @@
-using FMOD.Studio;
+// What the fuck man, WebGL either can't cache or dynamically recreates the buses
+// I should've gone to bed hours ago
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 
-/// <summary>
-/// NIGHTMARE SCRIPT AHHHHHHH
-/// </summary>
 public class PlayerSettingsManager : MonoBehaviour {
-    private static Bus _masterBus;
-    private static Bus _musicBus;
-    private static Bus _SFXBus;
+    private enum BusType {
+        Master,
+        Music,
+        SFX
+    }
+
     private static float _masterVolume = 1f;
     private static float _musicVolume = 1f;
     private static float _SFXVolume = 1f;
@@ -23,7 +24,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _masterVolume; }
         set {
             _masterVolume = value;
-            _masterBus.setVolume(_masterVolume);
+            SetVolume(BusType.Master);
         }
     }
 
@@ -31,7 +32,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _musicVolume; }
         set {
             _musicVolume = value;
-            _musicBus.setVolume(_musicVolume);
+            SetVolume(BusType.Music);
         }
     }
 
@@ -39,7 +40,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _SFXVolume; }
         set {
             _SFXVolume = value;
-            _SFXBus.setVolume(_SFXVolume);
+            SetVolume(BusType.SFX);
         }
     }
 
@@ -82,14 +83,9 @@ public class PlayerSettingsManager : MonoBehaviour {
     }
 
     private void InitialiseSettings() {
-        _masterBus = RuntimeManager.GetBus("bus:/");
-        _masterBus.setVolume(_masterVolume);
-
-        _musicBus = RuntimeManager.GetBus("bus:/Music");
-        _musicBus.setVolume(_musicVolume);
-
-        _SFXBus = RuntimeManager.GetBus("bus:/SFX");
-        _SFXBus.setVolume(_SFXVolume);
+        SetVolume(BusType.Master);
+        SetVolume(BusType.Music);
+        SetVolume(BusType.SFX);
 
         SetCRTMode(_CRTModeEnabled);
     }
@@ -111,6 +107,20 @@ public class PlayerSettingsManager : MonoBehaviour {
     private static void SetCRTMode(bool enabled) {
         if (_VHSProRendererFeature != null) {
             _VHSProRendererFeature.SetActive(enabled);
+        }
+    }
+
+    private static void SetVolume(BusType busType) {
+        switch (busType) {
+            case BusType.Master:
+                RuntimeManager.GetBus("bus:/").setVolume(_masterVolume);
+                break;
+            case BusType.Music:
+                RuntimeManager.GetBus("bus:/Music").setVolume(_musicVolume);
+                break;
+            case BusType.SFX:
+                RuntimeManager.GetBus("bus:/SFX").setVolume(_SFXVolume);
+                break;
         }
     }
 }

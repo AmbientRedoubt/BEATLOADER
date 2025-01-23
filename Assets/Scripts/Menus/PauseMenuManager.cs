@@ -11,8 +11,10 @@ public class PauseMenuManager : MonoBehaviour {
     [SerializeField] private GameObject _countdownModal;
     [SerializeField] private TMP_Text _countdownText;
     private const float COUNTDOWN_DURATION = 3f;
+    public static PauseMenuManager Instance { get; private set; }
 
     private void Awake() {
+        Instance = this;
         GameManager.OnGameStateChanged += GameManagerOnStateChanged;
     }
 

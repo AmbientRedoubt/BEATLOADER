@@ -1,11 +1,15 @@
+using System.ComponentModel;
 using MilkShake;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour {
+    [Description("Time in seconds which the players input is still counted before/after the beat.")]
+    [SerializeField] private float _inputWindow = 0.2f;
     [SerializeField] private ShakePreset _crashShake;
     [SerializeField] private ShakePreset _jumpShake;
+    [SerializeField] private RhythmTrack _rhythmTrack;
     public static PlayerController Instance { get; private set; }
 
     private void Awake() {
@@ -57,6 +61,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void OnEscape() {
-        GameManager.TogglePauseGame();
+        //! NASTY HACK
+        if (GameManager.CurrentState == GameState.Paused) {
+            PauseMenuManager.Instance.OnResumeButtonClicked();
+        }
+        else {
+            GameManager.TogglePauseGame();
+        }
+
     }
 }

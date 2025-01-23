@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour {
         // UpdateGameState(GameState.MainMenu);
     }
 
-    private static void ToggleMouseCursor() {
-        if (CurrentState != GameState.Playing) {
+    private static void ToggleMouseCursor(MouseState state) {
+        if (state == MouseState.Enabled) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -36,19 +36,23 @@ public class GameManager : MonoBehaviour {
 
     public static void UpdateGameState(GameState newState) {
         CurrentState = newState;
-        ToggleMouseCursor();
 
         switch (newState) {
             case GameState.MainMenu:
                 Time.timeScale = 1;
+                ToggleMouseCursor(MouseState.Enabled);
                 break;
             case GameState.Playing:
                 Time.timeScale = 1;
+                ToggleMouseCursor(MouseState.Disabled);
                 break;
             case GameState.Paused:
                 Time.timeScale = 0;
+                ToggleMouseCursor(MouseState.Enabled);
                 break;
             case GameState.GameOver:
+                Time.timeScale = 1;
+                ToggleMouseCursor(MouseState.Enabled);
                 break;
         }
         OnGameStateChanged?.Invoke(newState);
@@ -70,4 +74,9 @@ public enum GameState {
     Playing,
     Paused,
     GameOver
+}
+
+public enum MouseState {
+    Enabled,
+    Disabled
 }

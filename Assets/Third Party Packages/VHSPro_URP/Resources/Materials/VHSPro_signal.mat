@@ -15,7 +15,6 @@ Material:
   - VHS_COLOR
   - VHS_DITHER
   - VHS_FILMGRAIN_ON
-  - VHS_SCANLINES_ON
   - VHS_YIQNOISE_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4

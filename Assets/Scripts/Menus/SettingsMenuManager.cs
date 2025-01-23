@@ -1,8 +1,10 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SettingsMenuManager : MonoBehaviour {
     private const int VOLUME_STEPS = 4;
+    [SerializeField] private EventReference _settingsClickSound;
     [SerializeField] private Slider _masterVolumeSlider;
     [SerializeField] private Slider _musicVolumeSlider;
     [SerializeField] private Slider _sfxVolumeSlider;
@@ -21,7 +23,7 @@ public class SettingsMenuManager : MonoBehaviour {
     }
 
     public void PlaySettingsClickSound() {
-        AudioManager.PlayOnSettingsChange();
+        AudioManager.PlayOneShot(_settingsClickSound);
     }
 
     public void OnVolumeSliderUpdate(Slider slider) {

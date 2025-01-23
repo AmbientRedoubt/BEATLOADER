@@ -528,7 +528,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1193,6 +1193,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dec8b3c622e29d4e9bae6f61029864d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _countdownSound:
+    Guid:
+      Data1: 937830133
+      Data2: 1141785634
+      Data3: 335632815
+      Data4: -284590021
+    Path: event:/UI/Countdown
   _canvas: {fileID: 985182020}
   _backgroundImage: {fileID: 985182016}
   _canvasOutline: {fileID: 985182015}
@@ -1399,7 +1406,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1458,7 +1465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1459967303
 Transform:
   m_ObjectHideFlags: 0
@@ -1487,8 +1494,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1564831823}
+  - component: {fileID: 1564831824}
   m_Layer: 0
-  m_Name: Level Managers
+  m_Name: Scene Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1506,61 +1514,35 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1565764205}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1565764204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1565764205}
-  - component: {fileID: 1565764206}
-  m_Layer: 0
-  m_Name: ZeroDayAudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1565764205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565764204}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1564831823}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1565764206
+--- !u!114 &1564831824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565764204}
+  m_GameObject: {fileID: 1564831822}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 074778994f738104db982d823eb326f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickSound:
+    Guid:
+      Data1: -1110841821
+      Data2: 1153855220
+      Data3: 376949923
+      Data4: 826650496
+    Path: event:/UI/On Click
   _musicTrack:
     Guid:
       Data1: -1357931221
       Data2: 1116381041
       Data3: 1624010658
       Data4: -301700220
-    Path: event:/Music/Zero Day Music
+    Path: event:/Music/Awake
   _musicBackingTrack:
     Guid:
       Data1: 1937836345
@@ -1956,7 +1938,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1565764206}
+      - m_Target: {fileID: 1564831824}
         m_TargetAssemblyTypeName: ZeroDayAudioManager, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -2101,7 +2083,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1565764206}
+      - m_Target: {fileID: 1564831824}
         m_TargetAssemblyTypeName: ZeroDayAudioManager, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -2267,7 +2249,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2394,7 +2376,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1565764206}
+      - m_Target: {fileID: 1564831824}
         m_TargetAssemblyTypeName: ZeroDayAudioManager, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1

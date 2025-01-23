@@ -86,7 +86,6 @@ public class PlayerSettingsManager : MonoBehaviour {
         }
         else {
             Instance = this;
-            // LoadFMODBanks();
             LoadSavedVolumeSettings();
             LoadSavedToggleSettings();
         }
@@ -94,28 +93,6 @@ public class PlayerSettingsManager : MonoBehaviour {
 
     private void Start() {
         FindVHSProRendererFeature();
-    }
-
-    private void LoadFMODBanks() {
-        RuntimeManager.LoadBank("Master", true);
-        RuntimeManager.LoadBank("Music", true);
-        RuntimeManager.LoadBank("SFX", true);
-        RuntimeManager.WaitForAllSampleLoading();
-        Debug.Log("FMOD banks loaded");
-    }
-
-    private void FindVHSProRendererFeature() {
-        UniversalRenderPipelineAsset urpAsset = GraphicsSettings.defaultRenderPipeline as UniversalRenderPipelineAsset;
-        foreach (ScriptableRendererData renderer in urpAsset.rendererDataList.ToArray()) {
-            if (renderer is Renderer2DData renderer2DData) {
-                foreach (ScriptableRendererFeature feature in renderer2DData.rendererFeatures) {
-                    if (feature.name == "VHSPro") {
-                        _VHSProRendererFeature = feature;
-                        break;
-                    }
-                }
-            }
-        }
     }
 
     private void LoadSavedVolumeSettings() {
@@ -138,6 +115,20 @@ public class PlayerSettingsManager : MonoBehaviour {
 
         CRTModeEnabled = PlayerPrefs.GetInt("CRTModeEnabled", 1) == 1;
         SetCRTMode(_CRTModeEnabled);
+    }
+
+    private void FindVHSProRendererFeature() {
+        UniversalRenderPipelineAsset urpAsset = GraphicsSettings.defaultRenderPipeline as UniversalRenderPipelineAsset;
+        foreach (ScriptableRendererData renderer in urpAsset.rendererDataList.ToArray()) {
+            if (renderer is Renderer2DData renderer2DData) {
+                foreach (ScriptableRendererFeature feature in renderer2DData.rendererFeatures) {
+                    if (feature.name == "VHSPro") {
+                        _VHSProRendererFeature = feature;
+                        break;
+                    }
+                }
+            }
+        }
     }
 
     private static void SetCRTMode(bool enabled) {

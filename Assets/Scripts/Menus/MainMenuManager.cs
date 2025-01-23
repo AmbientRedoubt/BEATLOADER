@@ -19,7 +19,7 @@ public class MainMenuManager : MonoBehaviour {
 
     public void OnStartButtonClicked() {
         GameManager.UpdateGameState(GameState.Playing);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("ZeroDay");
+        SceneLoader.LoadScene(SceneLoader.Scene.ZeroDay);
     }
 
     public void OnQuitButtonClicked() {

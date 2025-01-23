@@ -1,9 +1,11 @@
 using System.Collections;
+using FMODUnity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour {
+    [SerializeField] private EventReference _countdownSound;
     [SerializeField] private Canvas _canvas;
     [SerializeField] private RawImage _backgroundImage;
     [SerializeField] private Outline _canvasOutline;
@@ -52,7 +54,7 @@ public class PauseMenuManager : MonoBehaviour {
     private IEnumerator CountdownToResume() {
         for (float i = COUNTDOWN_DURATION; i > 0; i--) {
             _countdownText.text = i.ToString();
-            AudioManager.PlayCountdownSound();
+            AudioManager.PlayOneShot(_countdownSound);
             yield return new WaitForSecondsRealtime(1f);
         }
         Debug.Log("Resuming game...");
@@ -63,7 +65,7 @@ public class PauseMenuManager : MonoBehaviour {
 
     public void OnMainMenuButtonClicked() {
         GameManager.UpdateGameState(GameState.MainMenu);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        SceneLoader.LoadScene(SceneLoader.Scene.MainMenu);
     }
 
     private void OnDestroy() {

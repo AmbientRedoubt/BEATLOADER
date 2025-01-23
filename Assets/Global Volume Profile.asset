@@ -182,7 +182,7 @@ MonoBehaviour:
     m_Value: 0
   bleedAmount:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.1
   bleedMode:
     m_OverrideState: 1
     m_Value: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
     m_Value: 0.3
   signalNoisePower:
     m_OverrideState: 1
-    m_Value: 0.83
+    m_Value: 0.9
   lineNoiseOn:
     m_OverrideState: 0
     m_Value: 0
@@ -232,10 +232,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   scanLinesOn:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   scanLineWidth:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 10
   linesFloatOn:
     m_OverrideState: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 2
   feedbackFade:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.82
   feedbackColor:
     m_OverrideState: 0

@@ -7,11 +7,6 @@ using FMOD.Studio;
 /// AudioManager handles audio playback.
 /// </summary>
 public class AudioManager : MonoBehaviour {
-    [SerializeField] private EventReference _clickSound;
-    [SerializeField] private EventReference _settingsSound;
-    [SerializeField] private EventReference _countdownSound;
-    [SerializeField] private EventReference _pausedSnapshot;
-    private static EventInstance _pausedSnapshotInstance;
     private static List<EventInstance> _eventInstances;
     public static AudioManager Instance { get; private set; }
 
@@ -33,18 +28,6 @@ public class AudioManager : MonoBehaviour {
         RuntimeManager.PlayOneShot(eventInstance);
     }
 
-    public static void PlayOnClickSound() {
-        PlayOneShot(Instance._clickSound);
-    }
-
-    public static void PlayOnSettingsChange() {
-        PlayOneShot(Instance._settingsSound);
-    }
-
-    public static void PlayCountdownSound() {
-        PlayOneShot(Instance._countdownSound);
-    }
-
     public static EventInstance CreateEventInstance(EventReference eventReference) {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         return eventInstance;
@@ -54,10 +37,6 @@ public class AudioManager : MonoBehaviour {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         _eventInstances.Add(eventInstance);
         return eventInstance;
-    }
-
-    public static void Stop(EventInstance eventInstance) {
-        eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     public static void CleanUpOne(EventInstance eventInstance, FMOD.Studio.STOP_MODE stopMode) {
@@ -83,14 +62,11 @@ public class AudioManager : MonoBehaviour {
     private void TogglePauseGame(GameState state) {
         switch (state) {
             case GameState.Playing:
-                Stop(_pausedSnapshotInstance);
                 // foreach (EventInstance eventInstance in _eventInstances) {
                 //     eventInstance.setPaused(false);
                 // }
                 break;
             case GameState.Paused:
-                _pausedSnapshotInstance = CreateEventInstance(_pausedSnapshot);
-                _pausedSnapshotInstance.start();
                 // foreach (EventInstance eventInstance in _eventInstances) {
                 //     eventInstance.setPaused(true);
                 // }

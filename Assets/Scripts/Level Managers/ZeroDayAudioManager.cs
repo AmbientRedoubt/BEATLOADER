@@ -4,6 +4,7 @@ using FMOD.Studio;
 using System;
 
 public class ZeroDayAudioManager : MonoBehaviour {
+    [SerializeField] private EventReference _clickSound;
     [SerializeField] private EventReference _musicTrack;
     private EventInstance _musicTrackInstance;
     [SerializeField] private EventReference _musicBackingTrack;
@@ -46,7 +47,7 @@ public class ZeroDayAudioManager : MonoBehaviour {
     }
 
     public void PlayClickSound() {
-        AudioManager.PlayOnClickSound();
+        AudioManager.PlayOneShot(_clickSound);
     }
 
     private void OnDestroy() {

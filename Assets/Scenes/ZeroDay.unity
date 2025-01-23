@@ -1556,11 +1556,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicTrack:
     Guid:
-      Data1: 341049330
-      Data2: 1134027055
-      Data3: 64080535
-      Data4: -132481852
-    Path: event:/Music/music_pause_test
+      Data1: -1357931221
+      Data2: 1116381041
+      Data3: 1624010658
+      Data4: -301700220
+    Path: event:/Music/Zero Day Music
   _musicBackingTrack:
     Guid:
       Data1: 1937836345

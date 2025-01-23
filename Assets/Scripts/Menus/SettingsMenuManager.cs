@@ -12,7 +12,7 @@ public class SettingsMenuManager : MonoBehaviour {
     [SerializeField] private Toggle _flashEffectsToggle;
     [SerializeField] private Toggle _crtModeToggle;
 
-    public void Start() {
+    private void Start() {
         _masterVolumeSlider.value = PlayerSettingsManager.MasterVolume * VOLUME_STEPS;
         _musicVolumeSlider.value = PlayerSettingsManager.MusicVolume * VOLUME_STEPS;
         _sfxVolumeSlider.value = PlayerSettingsManager.SFXVolume * VOLUME_STEPS;

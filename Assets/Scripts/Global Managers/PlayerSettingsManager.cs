@@ -8,24 +8,21 @@ using UnityEngine.Rendering;
 /// NIGHTMARE SCRIPT AHHHHHHH
 /// </summary>
 public class PlayerSettingsManager : MonoBehaviour {
-    private const int MAX_VOLUME = 1;
     private static Bus _masterBus;
     private static Bus _musicBus;
     private static Bus _SFXBus;
-    private static float _masterVolume;
-    private static float _musicVolume;
-    private static float _SFXVolume;
-    private static bool _screenShakeEnabled;
-    private static bool _flashEffectsEnabled;
-    private static bool _CRTModeEnabled;
+    private static float _masterVolume = 1f;
+    private static float _musicVolume = 1f;
+    private static float _SFXVolume = 1f;
+    private static bool _screenShakeEnabled = true;
+    private static bool _flashEffectsEnabled = true;
+    private static bool _CRTModeEnabled = true;
     private static ScriptableRendererFeature _VHSProRendererFeature;
 
     public static float MasterVolume {
         get { return _masterVolume; }
         set {
             _masterVolume = value;
-            PlayerPrefs.SetFloat("MasterVolume", _masterVolume);
-            PlayerPrefs.Save();
             _masterBus.setVolume(_masterVolume);
         }
     }
@@ -34,8 +31,6 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _musicVolume; }
         set {
             _musicVolume = value;
-            PlayerPrefs.SetFloat("MusicVolume", _musicVolume);
-            PlayerPrefs.Save();
             _musicBus.setVolume(_musicVolume);
         }
     }
@@ -44,8 +39,6 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _SFXVolume; }
         set {
             _SFXVolume = value;
-            PlayerPrefs.SetFloat("SFXVolume", _SFXVolume);
-            PlayerPrefs.Save();
             _SFXBus.setVolume(_SFXVolume);
         }
     }
@@ -55,8 +48,6 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _screenShakeEnabled; }
         set {
             _screenShakeEnabled = value;
-            PlayerPrefs.SetInt("ScreenShakeEnabled", _screenShakeEnabled ? 1 : 0);
-            PlayerPrefs.Save();
         }
     }
 
@@ -64,8 +55,6 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _flashEffectsEnabled; }
         set {
             _flashEffectsEnabled = value;
-            PlayerPrefs.SetInt("FlashEffectsEnabled", _flashEffectsEnabled ? 1 : 0);
-            PlayerPrefs.Save();
         }
     }
 
@@ -73,8 +62,6 @@ public class PlayerSettingsManager : MonoBehaviour {
         get { return _CRTModeEnabled; }
         set {
             _CRTModeEnabled = value;
-            PlayerPrefs.SetInt("CRTModeEnabled", _CRTModeEnabled ? 1 : 0);
-            PlayerPrefs.Save();
             SetCRTMode(_CRTModeEnabled);
         }
     }
@@ -86,8 +73,7 @@ public class PlayerSettingsManager : MonoBehaviour {
         }
         else {
             Instance = this;
-            LoadSavedVolumeSettings();
-            LoadSavedToggleSettings();
+            InitialiseSettings();
         }
     }
 
@@ -95,25 +81,16 @@ public class PlayerSettingsManager : MonoBehaviour {
         FindVHSProRendererFeature();
     }
 
-    private void LoadSavedVolumeSettings() {
+    private void InitialiseSettings() {
         _masterBus = RuntimeManager.GetBus("bus:/");
-        _masterVolume = PlayerPrefs.GetFloat("MasterVolume", MAX_VOLUME);
-        _masterBus.setVolume(MasterVolume);
+        _masterBus.setVolume(_masterVolume);
 
         _musicBus = RuntimeManager.GetBus("bus:/Music");
-        _musicVolume = PlayerPrefs.GetFloat("MusicVolume", MAX_VOLUME);
-        _musicBus.setVolume(MusicVolume);
+        _musicBus.setVolume(_musicVolume);
 
         _SFXBus = RuntimeManager.GetBus("bus:/SFX");
-        _SFXVolume = PlayerPrefs.GetFloat("SFXVolume", MAX_VOLUME);
-        _SFXBus.setVolume(SFXVolume);
-    }
+        _SFXBus.setVolume(_SFXVolume);
 
-    private void LoadSavedToggleSettings() {
-        ScreenShakeEnabled = PlayerPrefs.GetInt("ScreenShakeEnabled", 1) == 1;
-        FlashEffectsEnabled = PlayerPrefs.GetInt("FlashEffectsEnabled", 1) == 1;
-
-        CRTModeEnabled = PlayerPrefs.GetInt("CRTModeEnabled", 1) == 1;
         SetCRTMode(_CRTModeEnabled);
     }
 
@@ -135,9 +112,5 @@ public class PlayerSettingsManager : MonoBehaviour {
         if (_VHSProRendererFeature != null) {
             _VHSProRendererFeature.SetActive(enabled);
         }
-    }
-
-    private void OnDestroy() {
-        PlayerPrefs.Save();
     }
 }

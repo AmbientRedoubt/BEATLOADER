@@ -12,7 +12,7 @@ public class PauseMenuManager : MonoBehaviour {
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private GameObject _countdownModal;
     [SerializeField] private TMP_Text _countdownText;
-    private const float COUNTDOWN_DURATION = 3f;
+    private const int COUNTDOWN_DURATION = 3;
     public static PauseMenuManager Instance { get; private set; }
 
     private void Awake() {
@@ -52,7 +52,7 @@ public class PauseMenuManager : MonoBehaviour {
     }
 
     private IEnumerator CountdownToResume() {
-        for (float i = COUNTDOWN_DURATION; i > 0; i--) {
+        for (int i = COUNTDOWN_DURATION; i > 0; i--) {
             _countdownText.text = i.ToString();
             AudioManager.PlayOneShot(_countdownSound);
             yield return new WaitForSecondsRealtime(1f);

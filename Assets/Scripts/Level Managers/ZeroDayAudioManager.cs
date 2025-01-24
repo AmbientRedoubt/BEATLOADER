@@ -51,7 +51,7 @@ public class ZeroDayAudioManager : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        GameManager.OnGameStateChanged -= GameManagerOnStateChanged;
         AudioManager.CleanUp();
+        GameManager.OnGameStateChanged -= GameManagerOnStateChanged;
     }
 }

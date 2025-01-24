@@ -7,7 +7,7 @@ using FMOD.Studio;
 /// AudioManager handles audio playback.
 /// </summary>
 public class AudioManager : MonoBehaviour {
-    private static List<EventInstance> _eventInstances;
+    private static List<EventInstance> _eventInstances = new();
     public static AudioManager Instance { get; private set; }
 
     private void Awake() {
@@ -18,10 +18,6 @@ public class AudioManager : MonoBehaviour {
             Instance = this;
             GameManager.OnGameStateChanged += TogglePauseGame;
         }
-    }
-
-    private void Start() {
-        _eventInstances = new List<EventInstance>();
     }
 
     public static void PlayOneShot(EventReference eventInstance) {
@@ -39,21 +35,9 @@ public class AudioManager : MonoBehaviour {
         return eventInstance;
     }
 
-    public static void CleanUpOne(EventInstance eventInstance, FMOD.Studio.STOP_MODE stopMode) {
-        if (stopMode == FMOD.Studio.STOP_MODE.IMMEDIATE) {
-            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        }
-        else if (stopMode == FMOD.Studio.STOP_MODE.ALLOWFADEOUT) {
-            eventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        }
-        eventInstance.release();
-    }
-
     public static void CleanUp() {
-        // Debug.Log("Cleaning up audio");
-        if (_eventInstances.Count == 0) return;
         foreach (EventInstance eventInstance in _eventInstances) {
-            CleanUpOne(eventInstance, FMOD.Studio.STOP_MODE.IMMEDIATE);
+            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             eventInstance.release();
         }
         _eventInstances.Clear();
@@ -75,9 +59,7 @@ public class AudioManager : MonoBehaviour {
     }
 
     public void OnDestroy() {
-        foreach (EventInstance eventInstance in _eventInstances) {
-            eventInstance.release();
-        }
+        CleanUp();
         GameManager.OnGameStateChanged -= TogglePauseGame;
     }
 }

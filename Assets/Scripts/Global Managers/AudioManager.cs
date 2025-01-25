@@ -7,7 +7,7 @@ using FMOD.Studio;
 /// AudioManager handles audio playback.
 /// </summary>
 public class AudioManager : MonoBehaviour {
-    private static List<EventInstance> _eventInstances = new();
+    private static readonly List<EventInstance> _eventInstances = new();
     public static AudioManager Instance { get; private set; }
 
     private void Awake() {

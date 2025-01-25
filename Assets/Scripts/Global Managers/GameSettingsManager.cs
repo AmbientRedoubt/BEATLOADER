@@ -5,8 +5,10 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 
-public class PlayerSettingsManager : MonoBehaviour {
-    private enum BusType {
+public class GameSettingsManager : MonoBehaviour
+{
+    private enum BusType
+    {
         Master,
         Music,
         SFX
@@ -20,69 +22,86 @@ public class PlayerSettingsManager : MonoBehaviour {
     private static bool _CRTModeEnabled = true;
     private static ScriptableRendererFeature _VHSProRendererFeature;
 
-    public static float MasterVolume {
+    public static float MasterVolume
+    {
         get { return _masterVolume; }
-        set {
+        set
+        {
             _masterVolume = value;
             SetVolume(BusType.Master);
         }
     }
 
-    public static float MusicVolume {
+    public static float MusicVolume
+    {
         get { return _musicVolume; }
-        set {
+        set
+        {
             _musicVolume = value;
             SetVolume(BusType.Music);
         }
     }
 
-    public static float SFXVolume {
+    public static float SFXVolume
+    {
         get { return _SFXVolume; }
-        set {
+        set
+        {
             _SFXVolume = value;
             SetVolume(BusType.SFX);
         }
     }
 
     //TODO: Implement screen shake toggle
-    public static bool ScreenShakeEnabled {
+    public static bool ScreenShakeEnabled
+    {
         get { return _screenShakeEnabled; }
-        set {
+        set
+        {
             _screenShakeEnabled = value;
         }
     }
 
-    public static bool FlashEffectsEnabled {
+    public static bool FlashEffectsEnabled
+    {
         get { return _flashEffectsEnabled; }
-        set {
+        set
+        {
             _flashEffectsEnabled = value;
         }
     }
 
-    public static bool CRTModeEnabled {
+    public static bool CRTModeEnabled
+    {
         get { return _CRTModeEnabled; }
-        set {
+        set
+        {
             _CRTModeEnabled = value;
             SetCRTMode(_CRTModeEnabled);
         }
     }
-    public static PlayerSettingsManager Instance { get; private set; }
+    public static GameSettingsManager Instance { get; private set; }
 
-    private void Awake() {
-        if (Instance != null && Instance != this) {
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
             Destroy(this);
         }
-        else {
+        else
+        {
             Instance = this;
             InitialiseSettings();
         }
     }
 
-    private void Start() {
+    private void Start()
+    {
         FindVHSProRendererFeature();
     }
 
-    private void InitialiseSettings() {
+    private void InitialiseSettings()
+    {
         SetVolume(BusType.Master);
         SetVolume(BusType.Music);
         SetVolume(BusType.SFX);
@@ -90,12 +109,17 @@ public class PlayerSettingsManager : MonoBehaviour {
         SetCRTMode(_CRTModeEnabled);
     }
 
-    private void FindVHSProRendererFeature() {
+    private void FindVHSProRendererFeature()
+    {
         UniversalRenderPipelineAsset urpAsset = GraphicsSettings.defaultRenderPipeline as UniversalRenderPipelineAsset;
-        foreach (ScriptableRendererData renderer in urpAsset.rendererDataList.ToArray()) {
-            if (renderer is Renderer2DData renderer2DData) {
-                foreach (ScriptableRendererFeature feature in renderer2DData.rendererFeatures) {
-                    if (feature.name == "VHSPro") {
+        foreach (ScriptableRendererData renderer in urpAsset.rendererDataList.ToArray())
+        {
+            if (renderer is Renderer2DData renderer2DData)
+            {
+                foreach (ScriptableRendererFeature feature in renderer2DData.rendererFeatures)
+                {
+                    if (feature.name == "VHSPro")
+                    {
                         _VHSProRendererFeature = feature;
                         break;
                     }
@@ -104,14 +128,18 @@ public class PlayerSettingsManager : MonoBehaviour {
         }
     }
 
-    private static void SetCRTMode(bool enabled) {
-        if (_VHSProRendererFeature != null) {
+    private static void SetCRTMode(bool enabled)
+    {
+        if (_VHSProRendererFeature != null)
+        {
             _VHSProRendererFeature.SetActive(enabled);
         }
     }
 
-    private static void SetVolume(BusType busType) {
-        switch (busType) {
+    private static void SetVolume(BusType busType)
+    {
+        switch (busType)
+        {
             case BusType.Master:
                 RuntimeManager.GetBus("bus:/").setVolume(_masterVolume);
                 break;

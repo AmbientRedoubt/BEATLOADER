@@ -13,13 +13,13 @@ public class SettingsMenuManager : MonoBehaviour {
     [SerializeField] private Toggle _crtModeToggle;
 
     private void Start() {
-        _masterVolumeSlider.value = PlayerSettingsManager.MasterVolume * VOLUME_STEPS;
-        _musicVolumeSlider.value = PlayerSettingsManager.MusicVolume * VOLUME_STEPS;
-        _sfxVolumeSlider.value = PlayerSettingsManager.SFXVolume * VOLUME_STEPS;
+        _masterVolumeSlider.value = GameSettingsManager.MasterVolume * VOLUME_STEPS;
+        _musicVolumeSlider.value = GameSettingsManager.MusicVolume * VOLUME_STEPS;
+        _sfxVolumeSlider.value = GameSettingsManager.SFXVolume * VOLUME_STEPS;
 
-        _screenShakeToggle.isOn = PlayerSettingsManager.ScreenShakeEnabled;
-        _flashEffectsToggle.isOn = PlayerSettingsManager.FlashEffectsEnabled;
-        _crtModeToggle.isOn = PlayerSettingsManager.CRTModeEnabled;
+        _screenShakeToggle.isOn = GameSettingsManager.ScreenShakeEnabled;
+        _flashEffectsToggle.isOn = GameSettingsManager.FlashEffectsEnabled;
+        _crtModeToggle.isOn = GameSettingsManager.CRTModeEnabled;
     }
 
     public void PlaySettingsClickSound() {
@@ -30,13 +30,13 @@ public class SettingsMenuManager : MonoBehaviour {
         float normalisedVolume = slider.value / VOLUME_STEPS;
         switch (slider.name) {
             case "MasterVolumeSlider":
-                PlayerSettingsManager.MasterVolume = normalisedVolume;
+                GameSettingsManager.MasterVolume = normalisedVolume;
                 break;
             case "MusicVolumeSlider":
-                PlayerSettingsManager.MusicVolume = normalisedVolume;
+                GameSettingsManager.MusicVolume = normalisedVolume;
                 break;
             case "SFXVolumeSlider":
-                PlayerSettingsManager.SFXVolume = normalisedVolume;
+                GameSettingsManager.SFXVolume = normalisedVolume;
                 break;
         }
     }
@@ -44,13 +44,13 @@ public class SettingsMenuManager : MonoBehaviour {
     public void OnOptionToggle(Toggle toggle) {
         switch (toggle.name) {
             case "ScreenShakeToggle":
-                PlayerSettingsManager.ScreenShakeEnabled = toggle.isOn;
+                GameSettingsManager.ScreenShakeEnabled = toggle.isOn;
                 break;
             case "FlashEffectsToggle":
-                PlayerSettingsManager.FlashEffectsEnabled = toggle.isOn;
+                GameSettingsManager.FlashEffectsEnabled = toggle.isOn;
                 break;
             case "CRTModeToggle":
-                PlayerSettingsManager.CRTModeEnabled = toggle.isOn;
+                GameSettingsManager.CRTModeEnabled = toggle.isOn;
                 break;
         }
     }

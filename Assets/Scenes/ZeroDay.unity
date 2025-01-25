@@ -584,38 +584,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Global Volume
       objectReference: {fileID: 0}
-    - target: {fileID: 4518195095269192795, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -1466,7 +1434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1344334692
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,7 +1444,7 @@ Transform:
   m_GameObject: {fileID: 1344334691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1650,9 +1618,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878574c3a80601440a53c7e8aa9713aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _telegraphWindow: 2
+  _frameRate: 12
+  _noteSpeed: 0.65
+  _telegraphWindow: 3
+  _notesParent: {fileID: 1800348204}
   _notePrefab: {fileID: 1385162466631665725, guid: 67de581beb250be44bef1443835daebf, type: 3}
   <RhythmTrack>k__BackingField: {fileID: 11400000, guid: 59155a2de1c642d45b5ca026beca07d3, type: 2}
+  _notes: []
 --- !u!1 &1602996525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1662151431
 Animator:
   serializedVersion: 7
@@ -1958,6 +1930,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768787976}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1800348204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800348205}
+  m_Layer: 0
+  m_Name: Notes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800348205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800348204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1885604757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,3 +2863,4 @@ SceneRoots:
   - {fileID: 1662151433}
   - {fileID: 1459967303}
   - {fileID: 1602996527}
+  - {fileID: 1800348205}

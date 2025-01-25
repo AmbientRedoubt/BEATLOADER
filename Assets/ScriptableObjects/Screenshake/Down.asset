@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 955f6c9be248dc249a31bad716cc6963, type: 3}
-  m_Name: Jump
+  m_Name: Down
   m_EditorClassIdentifier: 
   shakeType: 0
   strength: 0.1
   roughness: 5
   fadeIn: 0.01
-  fadeOut: 0.1
-  positionInfluence: {x: -1, y: 1, z: 3}
-  rotationInfluence: {x: 23.4, y: 7.8, z: -44.7}
+  fadeOut: 0.2
+  positionInfluence: {x: -1, y: -1, z: 0}
+  rotationInfluence: {x: 23.4, y: 7.8, z: 0}

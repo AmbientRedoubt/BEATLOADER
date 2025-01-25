@@ -11,6 +11,8 @@ public class PlayerInputHandler : MonoBehaviour {
     }
 
     private void Update() {
+        if (GameManager.CurrentState == GameState.Paused) { return; }
+
         // No more inputs to check
         if (_nextInputIndex >= _rhythmTrack.NoteInputs.Length) { return; }
 
@@ -34,22 +36,22 @@ public class PlayerInputHandler : MonoBehaviour {
 
     private void OnUp() {
         // Debug.Log("Up");
-        CameraShakeManager.JumpShaker();
+        CameraShakeManager.UpShaker();
     }
 
     private void OnDown() {
         // Debug.Log("Down");
-        CameraShakeManager.JumpShaker();
+        CameraShakeManager.DownShaker();
     }
 
     private void OnSpace() {
         // Debug.Log("Space");
-        CameraShakeManager.JumpShaker();
+        CameraShakeManager.MissShaker();
     }
 
     private void OnEnter() {
         // Debug.Log("Enter");
-        CameraShakeManager.CrashShaker();
+        CameraShakeManager.MissShaker();
     }
 
     private void OnPause() {

@@ -112,8 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea040f4d3d9a54c448f0cf928245ba84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crashShake: {fileID: 11400000, guid: 4d466c2d3c1c96446984b3ceccc7d0cc, type: 2}
-  _jumpShake: {fileID: 11400000, guid: 81d9b6a51253f484281ffd17efeccac5, type: 2}
+  _missShake: {fileID: 11400000, guid: 4d466c2d3c1c96446984b3ceccc7d0cc, type: 2}
+  _upShake: {fileID: 11400000, guid: 81d9b6a51253f484281ffd17efeccac5, type: 2}
+  _downShake: {fileID: 11400000, guid: 29638e51ecb9c14498b0a7144a6e596e, type: 2}
 --- !u!114 &932262678448294144
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInputHandler : MonoBehaviour {
     private int _nextInputIndex = 0;
     [Tooltip("Time in seconds which the players input is still counted before/after the beat.")]
     [SerializeField] private float _inputWindow = 0.2f;
+    [SerializeField] private bool _canQuickRestart = false;
     private RhythmTrack _rhythmTrack;
 
     private void Start() {
@@ -52,6 +54,14 @@ public class PlayerInputHandler : MonoBehaviour {
     private void OnEnter() {
         // Debug.Log("Enter");
         CameraShakeManager.MissShaker();
+    }
+
+    private void OnRestart() {
+        if (_canQuickRestart) {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+            GameManager.UpdateGameState(GameState.Playing);
+        }
     }
 
     private void OnPause() {

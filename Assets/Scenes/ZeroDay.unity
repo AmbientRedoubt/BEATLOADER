@@ -2748,6 +2748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputWindow: 0.2
+  _canQuickRestart: 1
 --- !u!114 &2126646033
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1466,7 +1466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1344334692
 Transform:
   m_ObjectHideFlags: 0
@@ -1650,7 +1650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878574c3a80601440a53c7e8aa9713aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rhythmTrack: {fileID: 11400000, guid: 59155a2de1c642d45b5ca026beca07d3, type: 2}
+  _telegraphWindow: 2
+  _notePrefab: {fileID: 1385162466631665725, guid: 67de581beb250be44bef1443835daebf, type: 3}
+  <RhythmTrack>k__BackingField: {fileID: 11400000, guid: 59155a2de1c642d45b5ca026beca07d3, type: 2}
 --- !u!1 &1602996525
 GameObject:
   m_ObjectHideFlags: 0

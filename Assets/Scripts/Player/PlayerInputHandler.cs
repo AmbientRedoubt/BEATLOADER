@@ -12,21 +12,21 @@ public class PlayerInputHandler : MonoBehaviour {
 
     private void Update() {
         // No more inputs to check
-        if (_nextInputIndex >= _rhythmTrack.KeyInputs.Length) { return; }
+        if (_nextInputIndex >= _rhythmTrack.NoteInputs.Length) { return; }
 
         float currentTime = Time.time - RhythmTrackManager.TrackStartTime;
-        KeyInput nextExpectedInput = _rhythmTrack.KeyInputs[_nextInputIndex];
+        NoteInput nextExpectedNote = _rhythmTrack.NoteInputs[_nextInputIndex];
 
-        if (Mathf.Abs(nextExpectedInput.Time - currentTime) <= _inputWindow) {
-            if (nextExpectedInput.InputAction.action.triggered) {
-                Debug.Log($"Hit! Action: {nextExpectedInput.InputAction.name} at {currentTime}");
+        if (Mathf.Abs(nextExpectedNote.Time - currentTime) <= _inputWindow) {
+            if (nextExpectedNote.InputAction.action.triggered) {
+                Debug.Log($"Hit! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
                 _nextInputIndex++;
                 PlayerEvents.OnNoteHit?.Invoke();
             }
         }
 
-        else if (currentTime > nextExpectedInput.Time + _inputWindow) {
-            Debug.Log($"Missed! Action: {nextExpectedInput.InputAction.name} at {currentTime}");
+        else if (currentTime > nextExpectedNote.Time + _inputWindow) {
+            Debug.Log($"Missed! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
             _nextInputIndex++;
             PlayerEvents.OnNoteMiss?.Invoke();
         }

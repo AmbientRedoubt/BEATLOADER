@@ -1,6 +1,6 @@
 using System;
 
-// Player events action struct
+// Struct for storing player events
 public struct PlayerEvents {
     // Input Events
     public static Action OnNoteHit;

@@ -2743,9 +2743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputWindow: 0.2
-  _crashShake: {fileID: 11400000, guid: 4d466c2d3c1c96446984b3ceccc7d0cc, type: 2}
-  _jumpShake: {fileID: 11400000, guid: 81d9b6a51253f484281ffd17efeccac5, type: 2}
-  _rhythmTrack: {fileID: 11400000, guid: 59155a2de1c642d45b5ca026beca07d3, type: 2}
 --- !u!114 &2126646033
 MonoBehaviour:
   m_ObjectHideFlags: 0

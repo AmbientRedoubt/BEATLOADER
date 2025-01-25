@@ -1,15 +1,13 @@
 using UnityEngine;
-using MilkShake;
 
 public class PlayerInputHandler : MonoBehaviour {
     private int _nextInputIndex = 0;
     [Tooltip("Time in seconds which the players input is still counted before/after the beat.")]
     [SerializeField] private float _inputWindow = 0.2f;
-    [SerializeField] private ShakePreset _crashShake;
-    [SerializeField] private ShakePreset _jumpShake;
-    [SerializeField] private RhythmTrack _rhythmTrack;
+    private RhythmTrack _rhythmTrack;
 
     private void Start() {
+        _rhythmTrack = RhythmTrackManager.Instance.RhythmTrack;
     }
 
     private void Update() {
@@ -36,25 +34,22 @@ public class PlayerInputHandler : MonoBehaviour {
 
     private void OnUp() {
         // Debug.Log("Up");
-        Shaker.ShakeAll(_jumpShake);
+        CameraShakeManager.JumpShaker();
     }
 
     private void OnDown() {
         // Debug.Log("Down");
-        Shaker.ShakeAll(_jumpShake);
+        CameraShakeManager.JumpShaker();
     }
 
     private void OnSpace() {
-        // AudioManager.PlayOneShot(Instance._jumpSound);
-        // PlayerAudio.OnJump();
         // Debug.Log("Space");
-        Shaker.ShakeAll(_jumpShake);
+        CameraShakeManager.JumpShaker();
     }
 
     private void OnEnter() {
-        // AudioManager.PlayOneShot(Instance._attackSound);
         // Debug.Log("Enter");
-        Shaker.ShakeAll(_crashShake);
+        CameraShakeManager.CrashShaker();
     }
 
     private void OnPause() {

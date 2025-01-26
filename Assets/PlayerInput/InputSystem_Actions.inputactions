@@ -97,7 +97,7 @@
                 {
                     "name": "",
                     "id": "ee3d0cd2-254e-47a7-a8cb-bc94d9658c54",
-                    "path": "<Joystick>/trigger",
+                    "path": "<HID::2DC8-301B>/button10",
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
@@ -123,6 +123,39 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7210983-731e-4440-b454-34626fbf0a44",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7f22dd9-9491-45f5-8a7c-ccc168c25f4f",
+                    "path": "<HID::2DC8-301B>/button9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c9e3001b-c1d9-4c8f-937c-46b97a5e592a",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Enter",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -173,6 +206,28 @@
                 },
                 {
                     "name": "",
+                    "id": "de609f99-fab2-4964-a0e4-dded6b5f2ec9",
+                    "path": "<HID::2DC8-301B>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f6cacb4-cc94-4cec-a92f-8a2cd60d4545",
+                    "path": "<HID::2DC8-301B>/button13",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9cfa71e9-7fda-49fa-9e57-8010a34d9a06",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -189,6 +244,28 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfb1a940-79e4-4ead-b8f8-268ea4fa813f",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee0829b3-b975-4a79-bb3b-40ddb285ca77",
+                    "path": "<HID::2DC8-301B>/hat/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Up",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -217,11 +294,55 @@
                 },
                 {
                     "name": "",
+                    "id": "b08e0405-e76b-4566-b6c5-9ae51123e58c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ff4b852-4f29-4d0c-bea1-84284d030ca4",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "163c7eed-6086-4f7c-854a-e1804df3aa02",
+                    "path": "<HID::2DC8-301B>/hat/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Joystick",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "36620b2e-c0e5-44f2-b6a7-6401181ff85a",
                     "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bd594771-7785-4e3f-8567-b82ed32e12b8",
+                    "path": "<HID::2DC8-301B>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Restart",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -263,6 +384,17 @@
             "devices": [
                 {
                     "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<HID::2DC8-301B>",
                     "isOptional": false,
                     "isOR": false
                 }

@@ -38,22 +38,23 @@ public class PlayerInputHandler : MonoBehaviour {
 
     private void OnUp() {
         // Debug.Log("Up");
-        CameraShakeManager.UpShaker();
+        CameraShakeManager.Shake(ShakeType.Up);
+        // CameraShakeManager.UpShaker();
     }
 
     private void OnDown() {
         // Debug.Log("Down");
-        CameraShakeManager.DownShaker();
+        CameraShakeManager.Shake(ShakeType.Down);
     }
 
     private void OnSpace() {
         // Debug.Log("Space");
-        CameraShakeManager.MissShaker();
+        CameraShakeManager.Shake(ShakeType.Miss);
     }
 
     private void OnEnter() {
         // Debug.Log("Enter");
-        CameraShakeManager.MissShaker();
+        CameraShakeManager.Shake(ShakeType.Miss);
     }
 
     private void OnRestart() {

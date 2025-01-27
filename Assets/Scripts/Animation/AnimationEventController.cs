@@ -7,6 +7,7 @@ public class AnimationEventController : MonoBehaviour {
         _playerSprite.enabled = false;
     }
 
+    // Called by the intro animation event
     private void EnablePlayerSprite() {
         _playerSprite.enabled = true;
     }

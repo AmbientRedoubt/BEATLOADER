@@ -1608,18 +1608,18 @@ MonoBehaviour:
     Path: event:/UI/On Click
   _musicTrack:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1357931221
+      Data2: 1116381041
+      Data3: 1624010658
+      Data4: -301700220
+    Path: event:/Music/Awake/Awake
   _musicBackingTrack:
     Guid:
-      Data1: 1940133769
-      Data2: 1103067563
-      Data3: 1416921789
-      Data4: 899208044
-    Path: event:/Music/Struggle/Struggle
+      Data1: 1909729594
+      Data2: 1236840019
+      Data3: -1197927533
+      Data4: 981865085
+    Path: event:/Music/Pause/Awake Pause
 --- !u!114 &1564831825
 MonoBehaviour:
   m_ObjectHideFlags: 0

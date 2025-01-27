@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d348dbed55e3b0469fe6dadccc3b594, type: 3}
+  m_Name: Struggle
+  m_EditorClassIdentifier: 
+  BPM: 120
+  NoteInputs:
+  - Time: 3
+    Amplitude: 4.2
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 4.2
+    Amplitude: -1.38
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 5
+    Amplitude: 1.59
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 5.6
+    Amplitude: -0.85
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 6.77
+    Amplitude: -4.55
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 7.3
+    Amplitude: 1.32
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 7.98
+    Amplitude: 3.12
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 8.1
+    Amplitude: -1.2
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 8.6
+    Amplitude: 1.5
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 9.4
+    Amplitude: 0.74
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 10.2
+    Amplitude: -0.64
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 11.71
+    Amplitude: -1.2
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 12.8
+    Amplitude: 3.4
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 13.8
+    Amplitude: -2.12
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 14.3
+    Amplitude: -0.77
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - Time: 15
+    Amplitude: 1.07
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

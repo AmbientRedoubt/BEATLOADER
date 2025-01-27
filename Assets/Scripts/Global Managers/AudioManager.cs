@@ -1,5 +1,8 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
+// using FMOD;
 using FMODUnity;
 using FMOD.Studio;
 
@@ -8,6 +11,7 @@ using FMOD.Studio;
 /// </summary>
 public class AudioManager : MonoBehaviour {
     private static readonly List<EventInstance> _eventInstances = new();
+    // private EVENT_CALLBACK _eventCallback;
     public static AudioManager Instance { get; private set; }
 
     private void Awake() {
@@ -20,8 +24,24 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    public static void PlayOneShot(EventReference eventInstance) {
-        RuntimeManager.PlayOneShot(eventInstance);
+    public static void PlayOneShot(EventReference eventReference) {
+        RuntimeManager.PlayOneShot(eventReference);
+    }
+
+    // Used for events that need to be stopped and released immediately after playing
+    // In our case, this is used for the RhythmTrackNotes event
+    // CATCH AND RELEASE 🦅
+    public static void CreateAndReleaseEvent(EventReference eventReference, float eventLength) {
+        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+        eventInstance.start();
+        Instance.StartCoroutine(Instance.StopEventAfterDuration(eventInstance, eventLength)); // Convert ms to seconds
+        // Instance.StartCoroutine(Instance.StopEventAfterDuration(eventInstance, eventLength / 1000f)); // Convert ms to seconds
+    }
+
+    private IEnumerator StopEventAfterDuration(EventInstance eventInstance, float duration) {
+        yield return new WaitForSeconds(duration);
+        eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        eventInstance.release();
     }
 
     public static EventInstance CreateEventInstance(EventReference eventReference) {

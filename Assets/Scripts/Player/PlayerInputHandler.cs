@@ -23,14 +23,14 @@ public class PlayerInputHandler : MonoBehaviour {
 
         if (Mathf.Abs(nextExpectedNote.Time - currentTime) <= _inputWindow) {
             if (nextExpectedNote.InputAction.action.triggered) {
-                Debug.Log($"Hit! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
+                // Debug.Log($"Hit! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
                 _nextInputIndex++;
                 PlayerEvents.OnNoteHit?.Invoke();
             }
         }
 
         else if (currentTime > nextExpectedNote.Time + _inputWindow) {
-            Debug.Log($"Missed! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
+            // Debug.Log($"Missed! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
             _nextInputIndex++;
             PlayerEvents.OnNoteMiss?.Invoke();
         }

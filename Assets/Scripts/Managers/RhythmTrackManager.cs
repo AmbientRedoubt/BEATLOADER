@@ -47,7 +47,7 @@ public class RhythmTrackManager : MonoBehaviour {
             //! MAGIC NUMBER: x is the position of the new telegraphed note
             GameObject note = Instantiate(_notePrefab, new Vector3(13, nextExpectedNoteAmplitude, 0), Quaternion.identity, _notesParent.transform);
             _notes.Add(new InstantiatedNote { NoteObject = note, Time = nextExpectedNote.Time });
-            Debug.Log($"Telegraph! Action: {nextExpectedNote.InputAction.name} at {_currentTime}");
+            // Debug.Log($"Telegraph! Action: {nextExpectedNote.InputAction.name} at {_currentTime}");
             _nextInputIndex++;
         }
     }

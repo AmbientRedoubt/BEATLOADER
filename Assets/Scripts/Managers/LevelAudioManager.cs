@@ -1,0 +1,57 @@
+using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
+using System;
+
+public class LevelAudioManager : MonoBehaviour {
+    [SerializeField] private EventReference _clickSound;
+    [SerializeField] private EventReference _musicTrack;
+    private EventInstance _musicTrackInstance;
+    [SerializeField] private EventReference _musicBackingTrack;
+    private EventInstance _musicBackingTrackInstance;
+    public static LevelAudioManager Instance { get; private set; }
+
+    private void Awake() {
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+        }
+        else {
+            Instance = this;
+        }
+        GameManager.OnGameStateChanged += GameManagerOnStateChanged;
+    }
+
+    private void Start() {
+        _musicTrackInstance = AudioManager.CreateAndAddEventInstance(_musicTrack);
+        _musicTrackInstance.start();
+        _musicBackingTrackInstance = AudioManager.CreateAndAddEventInstance(_musicBackingTrack);
+        _musicBackingTrackInstance.start();
+        _musicBackingTrackInstance.setPaused(true);
+    }
+
+    private void GameManagerOnStateChanged(GameState state) {
+        switch (state) {
+            case GameState.Playing:
+                Debug.Log("Playing");
+                _musicTrackInstance.setPaused(false);
+                _musicBackingTrackInstance.setPaused(true);
+                break;
+            case GameState.Paused:
+                Debug.Log("Paused");
+                _musicTrackInstance.setPaused(true);
+                _musicBackingTrackInstance.setPaused(false);
+                break;
+            case GameState.GameOver:
+                throw new NotImplementedException();
+        }
+    }
+
+    public void PlayClickSound() {
+        AudioManager.PlayOneShot(_clickSound);
+    }
+
+    private void OnDestroy() {
+        AudioManager.CleanUp();
+        GameManager.OnGameStateChanged -= GameManagerOnStateChanged;
+    }
+}

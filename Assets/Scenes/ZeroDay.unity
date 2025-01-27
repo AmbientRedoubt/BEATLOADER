@@ -1608,18 +1608,18 @@ MonoBehaviour:
     Path: event:/UI/On Click
   _musicTrack:
     Guid:
-      Data1: -1357931221
-      Data2: 1116381041
-      Data3: 1624010658
-      Data4: -301700220
-    Path: event:/Music/Awake
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   _musicBackingTrack:
     Guid:
-      Data1: 1937836345
-      Data2: 1126401305
-      Data3: -716646510
-      Data4: -785312076
-    Path: event:/Music/music_pause_test_backing
+      Data1: 1940133769
+      Data2: 1103067563
+      Data3: 1416921789
+      Data4: 899208044
+    Path: event:/Music/Struggle/Struggle
 --- !u!114 &1564831825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,7 +1637,7 @@ MonoBehaviour:
   _telegraphWindow: 3
   _notesParent: {fileID: 1800348204}
   _notePrefab: {fileID: 1385162466631665725, guid: 67de581beb250be44bef1443835daebf, type: 3}
-  <RhythmTrack>k__BackingField: {fileID: 11400000, guid: 59155a2de1c642d45b5ca026beca07d3, type: 2}
+  <RhythmTrack>k__BackingField: {fileID: 11400000, guid: 7cf123b3c5991e04cbb38f23c0e33cb0, type: 2}
   _notes: []
 --- !u!1 &1602996525
 GameObject:

@@ -44,6 +44,7 @@ public class RhythmTrackManager : MonoBehaviour {
         float nextExpectedNoteAmplitude = nextExpectedNote.Amplitude;
 
         if (Mathf.Abs(nextExpectedNote.Time - _currentTime) <= _telegraphWindow) {
+            //! MAGIC NUMBER: x position of the new telegraphed note
             GameObject note = Instantiate(_notePrefab, new Vector3(13, nextExpectedNoteAmplitude, 0), Quaternion.identity, _notesParent.transform);
             _notes.Add(new InstantiatedNote { NoteObject = note, Time = nextExpectedNote.Time });
             Debug.Log($"Telegraph! Action: {nextExpectedNote.InputAction.name} at {_currentTime}");
@@ -57,8 +58,11 @@ public class RhythmTrackManager : MonoBehaviour {
             InstantiatedNote note = _notes[i];
 
             if (_currentTime > note.Time) {
-                Destroy(note.NoteObject);
-                _notes.RemoveAt(i);
+                if (note.NoteObject == null) {
+                    _notes.RemoveAt(i);
+                    continue;
+                }
+                FadeAndDestroy(note.NoteObject);
             }
 
             else {
@@ -67,5 +71,9 @@ public class RhythmTrackManager : MonoBehaviour {
                 note.NoteObject.transform.position = position;
             }
         }
+    }
+
+    private void FadeAndDestroy(GameObject noteObject) {
+        noteObject.GetComponent<NoteController>().FadeOut();
     }
 }

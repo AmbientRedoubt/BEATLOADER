@@ -59,6 +59,3 @@ MonoBehaviour:
   - Time: 14.3
     Amplitude: -0.77
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 15
-    Amplitude: 1.07
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

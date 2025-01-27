@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,6 +112,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,9 +142,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 024d504330a5ce2c0800000000000000
+      spriteID: d4245ffd24190f64f9d98907e7db857b
       internalID: -4401043766043618272
       vertices: []
       indices: 
@@ -151,9 +164,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc9746ec43a1c6370800000000000000
+      spriteID: 971ca4c4c6b4e4b4c97666ebfb3f94a3
       internalID: 8317051425949776333
       vertices: []
       indices: 
@@ -175,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1ff0c1228f25841bf42bae7ce503d3
-      internalID: -1055678213
+      spriteID: 7f6457986c83bce4fa8cddb3551c57b2
+      internalID: 343284699
       vertices: []
       indices: 
       edges: []
@@ -197,7 +210,7 @@ TextureImporter:
     nameFileIdTable:
       block_fade_spritesheet_0: -4401043766043618272
       block_fade_spritesheet_1: 8317051425949776333
-      block_fade_spritesheet_2: -1055678213
+      block_fade_spritesheet_2: 343284699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

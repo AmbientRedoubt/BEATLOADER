@@ -51,6 +51,7 @@ public class PauseMenuManager : MonoBehaviour {
         if (_isCountingDown) { return; }
         _isCountingDown = true;
 
+        GameManager.ToggleMouseCursor(MouseState.Disabled);
         _countdownModal.SetActive(true);
         _pauseMenu.SetActive(false);
         _backgroundImage.enabled = false;

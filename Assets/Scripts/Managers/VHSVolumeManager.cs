@@ -8,16 +8,6 @@ public class VHSVolumeManager : MonoBehaviour {
     [SerializeField] private Volume _volume;
     private static VHSProVolumeComponent _VHSVolumeComponent;
     private static Bloom _bloomVolumeComponent;
-    public static VHSVolumeManager Instance { get; private set; }
-
-    private void Awake() {
-        if (Instance == null) {
-            Instance = this;
-        }
-        else {
-            Destroy(gameObject);
-        }
-    }
 
     private void Start() {
         _volume.profile.TryGet(out _VHSVolumeComponent);

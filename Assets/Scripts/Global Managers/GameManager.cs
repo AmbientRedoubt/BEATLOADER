@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
         // UpdateGameState(GameState.MainMenu);
     }
 
-    private static void ToggleMouseCursor(MouseState state) {
+    public static void ToggleMouseCursor(MouseState state) {
         if (state == MouseState.Enabled) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

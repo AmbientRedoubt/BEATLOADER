@@ -137,8 +137,6 @@ public class VHSProVolumeComponent : VolumeComponent, IPostProcessComponent {
    public TextureParameter bypassTex = new TextureParameter(null);
 
    public bool IsActive() {
-      if (!GameSettingsManager.VHSModeEnabled) { return false; }
-
       //everything is off by default
       if (pixelOn.value == false &&
          colorOn.value == false &&

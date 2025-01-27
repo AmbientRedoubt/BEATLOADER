@@ -4,5 +4,4 @@ using UnityEngine;
 public class InstantiatedNote {
     public GameObject NoteObject;
     public float Time;
-    public bool ShouldBeRemoved;
 }

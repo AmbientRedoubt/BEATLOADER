@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 491256979}
   - component: {fileID: 491256978}
   m_Layer: 5
-  m_Name: CRTModeToggle
+  m_Name: VHSModeToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5128,7 +5128,7 @@ GameObject:
   - component: {fileID: 1774833567}
   - component: {fileID: 1774833566}
   m_Layer: 5
-  m_Name: CRTModeTitle
+  m_Name: VHSModeTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5173,7 +5173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CRT MODE
+  m_text: VHS MODE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b1be5cb03ee96f641b4b004eb14264fc, type: 2}
   m_sharedMaterial: {fileID: -2850292064608794071, guid: b1be5cb03ee96f641b4b004eb14264fc, type: 2}
@@ -6369,7 +6369,7 @@ MonoBehaviour:
   _sfxVolumeSlider: {fileID: 1831933891}
   _screenShakeToggle: {fileID: 668376609}
   _flashEffectsToggle: {fileID: 1639232521}
-  _crtModeToggle: {fileID: 491256979}
+  _VHSModeToggle: {fileID: 491256979}
 --- !u!1 &2084484811
 GameObject:
   m_ObjectHideFlags: 0
@@ -6589,6 +6589,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518195095269192795, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515720432214940017, guid: c4d7dddb2b317034ab364f1403055472, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6174977566460062913, guid: c4d7dddb2b317034ab364f1403055472, type: 3}

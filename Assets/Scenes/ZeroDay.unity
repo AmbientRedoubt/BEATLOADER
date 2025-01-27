@@ -1161,6 +1161,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dec8b3c622e29d4e9bae6f61029864d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pauseSound:
+    Guid:
+      Data1: 1320207854
+      Data2: 1230642263
+      Data3: 1936654753
+      Data4: 1477481146
+    Path: event:/UI/Pause
+  _unpauseSound:
+    Guid:
+      Data1: -533265074
+      Data2: 1230057727
+      Data3: 890844322
+      Data4: 661312285
+    Path: event:/UI/Unpause
   _countdownSound:
     Guid:
       Data1: 937830133

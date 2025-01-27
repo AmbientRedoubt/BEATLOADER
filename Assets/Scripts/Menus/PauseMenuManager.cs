@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour {
+    [SerializeField] private EventReference _pauseSound;
+    [SerializeField] private EventReference _unpauseSound;
     [SerializeField] private EventReference _countdownSound;
     [SerializeField] private Canvas _canvas;
     [SerializeField] private RawImage _backgroundImage;
@@ -13,6 +15,7 @@ public class PauseMenuManager : MonoBehaviour {
     [SerializeField] private GameObject _countdownModal;
     [SerializeField] private TMP_Text _countdownText;
     private const int COUNTDOWN_DURATION = 3;
+    private bool _isCountingDown = false;
     public static PauseMenuManager Instance { get; private set; }
 
     private void Awake() {
@@ -39,15 +42,20 @@ public class PauseMenuManager : MonoBehaviour {
                 _canvasOutline.enabled = true;
                 _pauseMenu.SetActive(true);
                 _countdownModal.SetActive(false);
+                AudioManager.PlayOneShot(_pauseSound);
                 break;
         }
     }
 
     public void OnResumeButtonClicked() {
+        if (_isCountingDown) { return; }
+        _isCountingDown = true;
+
         _countdownModal.SetActive(true);
         _pauseMenu.SetActive(false);
         _backgroundImage.enabled = false;
         _canvasOutline.enabled = false;
+        AudioManager.PlayOneShot(_unpauseSound);
         StartCoroutine(CountdownToResume());
     }
 
@@ -60,6 +68,7 @@ public class PauseMenuManager : MonoBehaviour {
         Debug.Log("Resuming game...");
         _countdownModal.SetActive(false);
         _canvas.enabled = false;
+        _isCountingDown = false;
         GameManager.UpdateGameState(GameState.Playing);
     }
 

@@ -16,7 +16,7 @@ public class RhythmTrackManager : MonoBehaviour {
     [SerializeField] private GameObject _notesParent;
     [SerializeField] private GameObject _notePrefab;
     [field: SerializeField] public RhythmTrack RhythmTrack { get; private set; }
-    [SerializeField] private List<InstantiatedNote> _notes = new();
+    [SerializeField] private List<InstantiatedNote> _instantiatedNotes = new();
     public static RhythmTrackManager Instance { get; private set; }
 
     private void Awake() {
@@ -46,7 +46,7 @@ public class RhythmTrackManager : MonoBehaviour {
         if (Mathf.Abs(nextExpectedNote.Time - _currentTime) <= _telegraphWindow) {
             //! MAGIC NUMBER: x is the position of the new telegraphed note
             GameObject note = Instantiate(_notePrefab, new Vector3(13, nextExpectedNoteAmplitude, 0), Quaternion.identity, _notesParent.transform);
-            _notes.Add(new InstantiatedNote { NoteObject = note, Time = nextExpectedNote.Time });
+            _instantiatedNotes.Add(new InstantiatedNote { NoteObject = note, Time = nextExpectedNote.Time });
             // Debug.Log($"Telegraph! Action: {nextExpectedNote.InputAction.name} at {_currentTime}");
             _nextInputIndex++;
         }
@@ -54,12 +54,12 @@ public class RhythmTrackManager : MonoBehaviour {
 
     private void UpdateNoteList() {
         // Iterate backwards since removing elements from a list while iterating forwards causes iterator issues
-        for (int i = _notes.Count - 1; i >= 0; i--) {
-            InstantiatedNote note = _notes[i];
+        for (int i = _instantiatedNotes.Count - 1; i >= 0; i--) {
+            InstantiatedNote note = _instantiatedNotes[i];
 
             if (_currentTime > note.Time) {
                 FadeAndDestroy(note.NoteObject);
-                _notes.RemoveAt(i);
+                _instantiatedNotes.RemoveAt(i);
             }
 
             else {

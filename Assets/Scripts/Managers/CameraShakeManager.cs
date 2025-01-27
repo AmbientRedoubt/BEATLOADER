@@ -15,7 +15,7 @@ public class CameraShakeManager : MonoBehaviour {
         _onNoteHit = () => Shake(ShakeType.Up);
         _onNoteMiss = () => Shake(ShakeType.Miss);
 
-        PlayerEvents.OnNoteHit += () => _onNoteHit();
+        PlayerEvents.OnNoteHit += (NoteInput _) => _onNoteHit();
         PlayerEvents.OnNoteMiss += () => _onNoteMiss();
 
         Instance = this;
@@ -38,7 +38,7 @@ public class CameraShakeManager : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        PlayerEvents.OnNoteHit -= () => _onNoteHit();
+        PlayerEvents.OnNoteHit -= (NoteInput _) => _onNoteHit();
         PlayerEvents.OnNoteMiss -= () => _onNoteMiss();
     }
 }

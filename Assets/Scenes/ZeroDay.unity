@@ -1521,11 +1521,11 @@ MonoBehaviour:
     Path: event:/UI/On Click
   _musicBackingTrack:
     Guid:
-      Data1: -1357931221
-      Data2: 1116381041
-      Data3: 1624010658
-      Data4: -301700220
-    Path: event:/Music/Awake/Awake
+      Data1: 624741984
+      Data2: 1252606334
+      Data3: -472217173
+      Data4: -1954184947
+    Path: event:/Music/Awake/Awake Backing
   _musicPausedTrack:
     Guid:
       Data1: 1909729594

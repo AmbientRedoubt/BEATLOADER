@@ -66,7 +66,7 @@ public class PauseMenuManager : MonoBehaviour {
             AudioManager.PlayOneShot(_countdownSound);
             yield return new WaitForSecondsRealtime(1f);
         }
-        Debug.Log("Resuming game...");
+        // Debug.Log("Resuming game...");
         _countdownModal.SetActive(false);
         _canvas.enabled = false;
         _isCountingDown = false;

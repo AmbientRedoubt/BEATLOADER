@@ -1,4 +1,3 @@
-using FMODUnity;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewRhythmTrack", menuName = "RhythmTrack")]

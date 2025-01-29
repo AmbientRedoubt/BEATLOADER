@@ -59,8 +59,7 @@ public class PlayerInputHandler : MonoBehaviour {
 
     private void OnRestart() {
         if (_canQuickRestart) {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            SceneLoader.RestartScene();
             GameManager.UpdateGameState(GameState.Playing);
         }
     }

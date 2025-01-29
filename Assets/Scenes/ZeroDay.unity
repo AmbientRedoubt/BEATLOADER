@@ -1519,14 +1519,14 @@ MonoBehaviour:
       Data3: 376949923
       Data4: 826650496
     Path: event:/UI/On Click
-  _musicTrack:
+  _musicBackingTrack:
     Guid:
       Data1: -1357931221
       Data2: 1116381041
       Data3: 1624010658
       Data4: -301700220
     Path: event:/Music/Awake/Awake
-  _musicBackingTrack:
+  _musicPausedTrack:
     Guid:
       Data1: 1909729594
       Data2: 1236840019
@@ -3067,7 +3067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7234292423369143414, guid: bdfd961cb0f2cc24c900a3e58e8c6f4d, type: 3}
       propertyPath: m_Name
-      value: Main Camera Container
+      value: Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

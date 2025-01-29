@@ -75,7 +75,7 @@ public class PauseMenuManager : MonoBehaviour {
 
     public void OnMainMenuButtonClicked() {
         GameManager.UpdateGameState(GameState.MainMenu);
-        SceneLoader.LoadScene(SceneLoader.Scene.MainMenu);
+        SceneLoader.LoadSceneLoadingScreenAsync(Scene.MainMenu);
     }
 
     private void OnDestroy() {

@@ -19,7 +19,7 @@ public class MainMenuManager : MonoBehaviour {
 
     public void OnStartButtonClicked() {
         GameManager.UpdateGameState(GameState.Playing);
-        SceneLoader.LoadScene(SceneLoader.Scene.ZeroDay);
+        SceneLoader.LoadSceneLoadingScreenAsync(Scene.ZeroDay);
     }
 
     public void OnQuitButtonClicked() {

@@ -5,10 +5,10 @@ using System;
 
 public class LevelAudioManager : MonoBehaviour {
     [SerializeField] private EventReference _clickSound;
-    [SerializeField] private EventReference _musicTrack;
-    private EventInstance _musicTrackInstance;
     [SerializeField] private EventReference _musicBackingTrack;
+    [SerializeField] private EventReference _musicPausedTrack;
     private EventInstance _musicBackingTrackInstance;
+    private EventInstance _musicPausedTrackInstance;
     public static LevelAudioManager Instance { get; private set; }
 
     private void Awake() {
@@ -22,24 +22,24 @@ public class LevelAudioManager : MonoBehaviour {
     }
 
     private void Start() {
-        _musicTrackInstance = AudioManager.CreateAndAddEventInstance(_musicTrack);
-        _musicTrackInstance.start();
         _musicBackingTrackInstance = AudioManager.CreateAndAddEventInstance(_musicBackingTrack);
+        _musicPausedTrackInstance = AudioManager.CreateAndAddEventInstance(_musicPausedTrack);
         _musicBackingTrackInstance.start();
-        _musicBackingTrackInstance.setPaused(true);
+        _musicPausedTrackInstance.start();
+        _musicPausedTrackInstance.setPaused(true);
     }
 
     private void GameManagerOnStateChanged(GameState state) {
         switch (state) {
             case GameState.Playing:
                 Debug.Log("Playing");
-                _musicTrackInstance.setPaused(false);
-                _musicBackingTrackInstance.setPaused(true);
+                _musicBackingTrackInstance.setPaused(false);
+                _musicPausedTrackInstance.setPaused(true);
                 break;
             case GameState.Paused:
                 Debug.Log("Paused");
-                _musicTrackInstance.setPaused(true);
-                _musicBackingTrackInstance.setPaused(false);
+                _musicBackingTrackInstance.setPaused(true);
+                _musicPausedTrackInstance.setPaused(false);
                 break;
             case GameState.GameOver:
                 throw new NotImplementedException();

@@ -15,13 +15,8 @@ public static class SceneLoader {
     }
 
     public static void LoadSceneLoadingScreenAsync(Scene scene) {
-        Debug.Log($"Loading loading screen: {Time.deltaTime}");
         LoadScene(Scene.LoadingScreen);
-        // I don't like this, but it's the only way to get coroutines to work in a static context
-        SceneLoaderHelper.Instance.StartCoroutine(SceneLoaderHelper.Instance.LoadSceneAsync(scene));
-        Debug.Log($"Loaded {scene}: {Time.deltaTime}");
-        UnloadSceneAsync(Scene.LoadingScreen);
-        Debug.Log($"Unloaded loading screen: {Time.deltaTime}");
+        LoadSceneAsync(scene);
     }
 
     public static void UnloadSceneAsync(Scene scene) {

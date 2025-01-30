@@ -67,7 +67,7 @@ public class PlayerInputHandler : MonoBehaviour {
     private void OnPause() {
         //! NASTY HACK
         if (GameManager.CurrentState == GameState.Paused) {
-            PauseMenuManager.Instance.OnResumeButtonClicked();
+            LevelMenuManager.Instance.OnResumeButtonClicked();
         }
         else {
             GameManager.TogglePauseGame();

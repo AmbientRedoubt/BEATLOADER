@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PauseMenuManager : MonoBehaviour {
+public class LevelMenuManager : MonoBehaviour {
     [SerializeField] private EventReference _pauseSound;
     [SerializeField] private EventReference _unpauseSound;
     [SerializeField] private EventReference _countdownSound;
@@ -12,11 +12,12 @@ public class PauseMenuManager : MonoBehaviour {
     [SerializeField] private RawImage _backgroundImage;
     [SerializeField] private Outline _canvasOutline;
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _gameOverMenu;
     [SerializeField] private GameObject _countdownModal;
     [SerializeField] private TMP_Text _countdownText;
     private const int COUNTDOWN_DURATION = 3;
     private bool _isCountingDown = false;
-    public static PauseMenuManager Instance { get; private set; }
+    public static LevelMenuManager Instance { get; private set; }
 
     private void Awake() {
         Instance = this;
@@ -27,8 +28,9 @@ public class PauseMenuManager : MonoBehaviour {
         _canvas.enabled = false;
         _backgroundImage.enabled = true;
         _canvasOutline.enabled = true;
-        _pauseMenu.SetActive(true);
+        _pauseMenu.SetActive(false);
         _countdownModal.SetActive(false);
+        _gameOverMenu.SetActive(false);
     }
 
     private void GameManagerOnStateChanged(GameState state) {
@@ -41,7 +43,13 @@ public class PauseMenuManager : MonoBehaviour {
                 _backgroundImage.enabled = true;
                 _canvasOutline.enabled = true;
                 _pauseMenu.SetActive(true);
-                _countdownModal.SetActive(false);
+                AudioManager.PlayOneShot(_pauseSound);
+                break;
+            case GameState.GameOver:
+                _canvas.enabled = true;
+                _backgroundImage.enabled = true;
+                _canvasOutline.enabled = true;
+                _gameOverMenu.SetActive(true);
                 AudioManager.PlayOneShot(_pauseSound);
                 break;
         }
@@ -76,6 +84,11 @@ public class PauseMenuManager : MonoBehaviour {
     public void OnMainMenuButtonClicked() {
         GameManager.UpdateGameState(GameState.MainMenu);
         SceneLoader.LoadSceneLoadingScreenAsync(Scene.MainMenu);
+    }
+
+    public void OnRestartButtonClicked() {
+        GameManager.UpdateGameState(GameState.Playing);
+        SceneLoader.RestartScene();
     }
 
     private void OnDestroy() {

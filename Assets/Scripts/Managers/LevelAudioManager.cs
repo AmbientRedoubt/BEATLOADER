@@ -42,7 +42,10 @@ public class LevelAudioManager : MonoBehaviour {
                 _musicPausedTrackInstance.setPaused(false);
                 break;
             case GameState.GameOver:
-                throw new NotImplementedException();
+                Debug.Log("Game Over");
+                _musicBackingTrackInstance.setPaused(true);
+                _musicPausedTrackInstance.setPaused(true);
+                break;
         }
     }
 

@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour {
                 ToggleMouseCursor(MouseState.Enabled);
                 break;
             case GameState.GameOver:
-                Time.timeScale = 1;
+                Time.timeScale = 0;
                 ToggleMouseCursor(MouseState.Enabled);
                 break;
         }

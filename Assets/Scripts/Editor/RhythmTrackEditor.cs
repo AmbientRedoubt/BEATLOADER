@@ -1,7 +1,6 @@
 using UnityEditor;
 using UnityEngine;
 using System.Linq;
-using UnityEngine.InputSystem;
 
 [CustomEditor(typeof(RhythmTrack))]
 public class RhythmTrackEditor : Editor {

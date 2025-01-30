@@ -14,51 +14,343 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BPM: 120
   NoteInputs:
-  - Time: 3
-    Amplitude: 4.2
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 4.2
-    Amplitude: -1.38
+  - Time: 1.72
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 5
-    Amplitude: 1.59
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 5.6
-    Amplitude: -0.85
+    NoteSound:
+      Guid:
+        Data1: -1410859159
+        Data2: 1319516839
+        Data3: -659352655
+        Data4: 827343371
+      Path: event:/Music/Struggle/Notes/track2_note1
+  - Time: 2.57
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 6.77
-    Amplitude: -4.55
+    NoteSound:
+      Guid:
+        Data1: 1005511180
+        Data2: 1268120264
+        Data3: -1056343882
+        Data4: 945338609
+      Path: event:/Music/Struggle/Notes/track2_note2
+  - Time: 2.99
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 7.3
-    Amplitude: 1.32
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 7.98
-    Amplitude: 3.12
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 8.1
-    Amplitude: -1.2
+    NoteSound:
+      Guid:
+        Data1: -867889177
+        Data2: 1232268235
+        Data3: 509790111
+        Data4: -294842967
+      Path: event:/Music/Struggle/Notes/track2_note3
+  - Time: 3.85
+    Amplitude: -3.28
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 8.6
-    Amplitude: 1.5
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 9.4
-    Amplitude: 0.74
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 10.2
-    Amplitude: -0.64
+    NoteSound:
+      Guid:
+        Data1: 674828072
+        Data2: 1129275082
+        Data3: 1176793515
+        Data4: 862653150
+      Path: event:/Music/Struggle/Notes/track2_note4
+  - Time: 4.71
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 11.71
-    Amplitude: -1.2
+    NoteSound:
+      Guid:
+        Data1: -2070200275
+        Data2: 1241807759
+        Data3: -69572935
+        Data4: -1443223216
+      Path: event:/Music/Struggle/Notes/track2_note5
+  - Time: 5.54
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 12.8
-    Amplitude: 3.4
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 13.8
-    Amplitude: -2.12
+    NoteSound:
+      Guid:
+        Data1: -1643990236
+        Data2: 1285618428
+        Data3: 2043010437
+        Data4: -1892660874
+      Path: event:/Music/Struggle/Notes/track2_note6
+  - Time: 5.97
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - Time: 14.3
-    Amplitude: -0.77
+    NoteSound:
+      Guid:
+        Data1: 1023723904
+        Data2: 1195271315
+        Data3: -1772586073
+        Data4: 5820526
+      Path: event:/Music/Struggle/Notes/track2_note7
+  - Time: 6.39
+    Amplitude: 0
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 492101469
+        Data2: 1277377784
+        Data3: -221252711
+        Data4: 471772484
+      Path: event:/Music/Struggle/Notes/track2_note8
+  - Time: 6.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1630538277
+        Data2: 1177166427
+        Data3: 1551769219
+        Data4: -1517383073
+      Path: event:/Music/Struggle/Notes/track2_note9
+  - Time: 7.71
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -589266144
+        Data2: 1124610063
+        Data3: -1706312548
+        Data4: 1238187575
+      Path: event:/Music/Struggle/Notes/track2_note10
+  - Time: 8.57
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -583470931
+        Data2: 1197003948
+        Data3: 1139048337
+        Data4: -252925883
+      Path: event:/Music/Struggle/Notes/track2_note11
+  - Time: 9.37
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1143860376
+        Data2: 1154110705
+        Data3: -1680596809
+        Data4: 808346427
+      Path: event:/Music/Struggle/Notes/track2_note12
+  - Time: 9.83
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1771951997
+        Data2: 1243155819
+        Data3: 1653805236
+        Data4: -54083652
+      Path: event:/Music/Struggle/Notes/track2_note13
+  - Time: 10.67
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1457858736
+        Data2: 1183832086
+        Data3: 1681972671
+        Data4: 1860753383
+      Path: event:/Music/Struggle/Notes/track2_note14
+  - Time: 11.57
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -546371564
+        Data2: 1126937523
+        Data3: 658302117
+        Data4: 1566406990
+      Path: event:/Music/Struggle/Notes/track2_note15
+  - Time: 12.42
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1578537669
+        Data2: 1327869264
+        Data3: 1160804252
+        Data4: 1648193569
+      Path: event:/Music/Struggle/Notes/track2_note16
+  - Time: 12.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1101119679
+        Data2: 1120689985
+        Data3: -2033270623
+        Data4: -1504922554
+      Path: event:/Music/Struggle/Notes/track2_note17
+  - Time: 13.28
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1256295874
+        Data2: 1209690763
+        Data3: 267871669
+        Data4: 58638874
+      Path: event:/Music/Struggle/Notes/track2_note18
+  - Time: 13.71
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1497196756
+        Data2: 1296341565
+        Data3: 2120521146
+        Data4: 34342201
+      Path: event:/Music/Struggle/Notes/track2_note19
+  - Time: 14.14
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1858304798
+        Data2: 1076153343
+        Data3: 82791314
+        Data4: -213904433
+      Path: event:/Music/Struggle/Notes/track2_note20
   - Time: 15
-    Amplitude: 1.07
-    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1496118941
+        Data2: 1332534728
+        Data3: 1454380174
+        Data4: -70471480
+      Path: event:/Music/Struggle/Notes/track2_note21
+  - Time: 15.84
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1932189098
+        Data2: 1240660016
+        Data3: -1004290393
+        Data4: 2027499387
+      Path: event:/Music/Struggle/Notes/track2_note22
+  - Time: 16.71
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -140611787
+        Data2: 1190329987
+        Data3: 1828562069
+        Data4: -1889180141
+      Path: event:/Music/Struggle/Notes/track2_note23
+  - Time: 17.56
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -69335682
+        Data2: 1095642328
+        Data3: -598133319
+        Data4: -2126598800
+      Path: event:/Music/Struggle/Notes/track2_note24
+  - Time: 18.59
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1696608116
+        Data2: 1207395846
+        Data3: -1304362570
+        Data4: -1248123545
+      Path: event:/Music/Struggle/Notes/track2_note25
+  - Time: 18.62
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 2089772054
+        Data2: 1317214568
+        Data3: 1676799644
+        Data4: -1500947237
+      Path: event:/Music/Struggle/Notes/track2_note26
+  - Time: 18.79
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1144880552
+        Data2: 1106575745
+        Data3: 1995791503
+        Data4: -1887022154
+      Path: event:/Music/Struggle/Notes/track2_note27
+  - Time: 19.68
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 303101415
+        Data2: 1175875482
+        Data3: 1623155111
+        Data4: -943586782
+      Path: event:/Music/Struggle/Notes/track2_note28
+  - Time: 20.12
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1475518129
+        Data2: 1125130045
+        Data3: -1177345610
+        Data4: 1937547102
+      Path: event:/Music/Struggle/Notes/track2_note29
+  - Time: 20.98
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -2098107368
+        Data2: 1225833581
+        Data3: 1742697662
+        Data4: -494926340
+      Path: event:/Music/Struggle/Notes/track2_note30
+  - Time: 21.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -846774764
+        Data2: 1099835425
+        Data3: 1912190636
+        Data4: -503084799
+      Path: event:/Music/Struggle/Notes/track2_note31
+  - Time: 22.71
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -49556589
+        Data2: 1321271005
+        Data3: -1992076411
+        Data4: 1679348010
+      Path: event:/Music/Struggle/Notes/track2_note32
+  - Time: 23.56
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1761501336
+        Data2: 1279968463
+        Data3: 1537750200
+        Data4: 1170591678
+      Path: event:/Music/Struggle/Notes/track2_note33
+  - Time: 24
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -567387826
+        Data2: 1098391745
+        Data3: -1804933732
+        Data4: 1379613521
+      Path: event:/Music/Struggle/Notes/track2_note34

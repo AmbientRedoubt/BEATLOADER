@@ -59,7 +59,7 @@ public class RhythmTrackEditor : Editor {
             RhythmTrack track = (RhythmTrack)target;
 
             // Set the note sound path here (CHANGE ME WHEN ADDING NEW TRACKS!)
-            track.NoteInputs[track.NoteInputs.Length - 1].NoteSound.Path = "event:/Music/Awake/Notes/awake_note" + (track.NoteInputs.Length - 1 + 1);
+            track.NoteInputs[track.NoteInputs.Length - 1].NoteSound.Path = "event:/Music/Struggle/Notes/track2_note" + track.NoteInputs.Length;
 
             EditorUtility.SetDirty(track);
             serializedObject.Update();

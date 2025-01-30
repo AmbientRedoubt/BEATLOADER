@@ -5,9 +5,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelMenuManager : MonoBehaviour {
+    [Header("FMOD UI Events")]
     [SerializeField] private EventReference _pauseSound;
     [SerializeField] private EventReference _unpauseSound;
     [SerializeField] private EventReference _countdownSound;
+    [Header("UI Elements")]
     [SerializeField] private Canvas _canvas;
     [SerializeField] private RawImage _backgroundImage;
     [SerializeField] private Outline _canvasOutline;

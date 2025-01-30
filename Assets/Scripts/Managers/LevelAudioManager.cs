@@ -1,10 +1,11 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
-using System;
+using System.Collections.Generic;
 
 public class LevelAudioManager : MonoBehaviour {
     [SerializeField] private EventReference _clickSound;
+    [Header("FMOD Music Events")]
     [SerializeField] private EventReference _musicBackingTrack;
     [SerializeField] private EventReference _musicPausedTrack;
     private EventInstance _musicBackingTrackInstance;

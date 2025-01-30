@@ -1,11 +1,13 @@
 using UnityEngine;
 using FMODUnity;
+using System.Collections.Generic;
 
 public class PlayerAudioHandler : MonoBehaviour {
     [SerializeField] private EventReference _jumpSound;
     [SerializeField] private EventReference _noteHitSound;
     [SerializeField] private EventReference _noteMissSound;
     [SerializeField] private EventReference _noteHoldSound;
+    [SerializeField] private List<EventReference> _glitchSFXList;
 
     private void Awake() {
         PlayerEvents.OnNoteHit += OnNoteHit;
@@ -24,8 +26,11 @@ public class PlayerAudioHandler : MonoBehaviour {
     }
 
     private void OnNoteMiss() {
-        AudioManager.PlayOneShot(_noteMissSound);
-        Debug.Log("Note Missed!");
+        var glitchSFX = _glitchSFXList.Rand();
+        AudioManager.PlayOneShot(glitchSFX);
+        _glitchSFXList.Remove(glitchSFX);
+        // AudioManager.PlayOneShot(_noteMissSound);
+        // Debug.Log("Note Missed!");
     }
 
     private void OnDestroy() {

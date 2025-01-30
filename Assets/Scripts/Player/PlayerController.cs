@@ -20,10 +20,6 @@ public class PlayerController : MonoBehaviour {
         Instance = this;
     }
 
-    private void Start() {
-
-    }
-
     public void TakeDamage() {
         _health--;
 

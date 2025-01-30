@@ -12,6 +12,7 @@ public class LevelMenuManager : MonoBehaviour {
     [SerializeField] private RawImage _backgroundImage;
     [SerializeField] private Outline _canvasOutline;
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _settingsMenu;
     [SerializeField] private GameObject _gameOverMenu;
     [SerializeField] private GameObject _countdownModal;
     [SerializeField] private TMP_Text _countdownText;
@@ -29,6 +30,7 @@ public class LevelMenuManager : MonoBehaviour {
         _backgroundImage.enabled = true;
         _canvasOutline.enabled = true;
         _pauseMenu.SetActive(false);
+        _settingsMenu.SetActive(false);
         _countdownModal.SetActive(false);
         _gameOverMenu.SetActive(false);
     }

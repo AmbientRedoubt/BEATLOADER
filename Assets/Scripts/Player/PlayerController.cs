@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,7 +11,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private PlayerAudioHandler _playerAudio;
     [SerializeField] private PlayerInputHandler _playerInput;
     [SerializeField] private PlayerMovementController _playerMovement;
-    [SerializeField] private int _health = 3;
+    [SerializeField] private int _health = 4;
+    [SerializeField] private List<GameObject> _glitchEffects;
     public static PlayerController Instance { get; private set; }
 
     private void Awake() {
@@ -24,13 +27,27 @@ public class PlayerController : MonoBehaviour {
     public void TakeDamage() {
         _health--;
 
-        if (_health <= 0) {
+        if (_health > 0) {
+            DisplayRandomGlitchEffect();
+        }
+
+        if (_health == 0) {
             GameManager.UpdateGameState(GameState.GameOver);
+        }
+    }
+
+    /// <summary>
+    /// Display two random glitch effects when the player takes damage.
+    /// </summary>
+    private void DisplayRandomGlitchEffect() {
+        for (int i = 0; i < 2; i++) {
+            var glitchEffect = _glitchEffects.Rand(); // Extension method
+            _glitchEffects.Remove(glitchEffect);
+            glitchEffect.SetActive(true);
         }
     }
 
     private void OnDestroy() {
         PlayerEvents.OnNoteMiss -= TakeDamage;
     }
-
 }

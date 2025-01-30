@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerInputHandler : MonoBehaviour {
     private int _nextInputIndex = 0;

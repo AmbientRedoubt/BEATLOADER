@@ -4245,6 +4245,15 @@ MonoBehaviour:
   _playerInput: {fileID: 2126646032}
   _playerMovement: {fileID: 2126646031}
   _health: 3
+  _glitchEffects:
+  - {fileID: 235550816}
+  - {fileID: 1184680472}
+  - {fileID: 2039170136}
+  - {fileID: 1682855750}
+  - {fileID: 1107732729}
+  - {fileID: 1194602143}
+  - {fileID: 690962612}
+  - {fileID: 1839099448}
 --- !u!114 &2126646031
 MonoBehaviour:
   m_ObjectHideFlags: 0

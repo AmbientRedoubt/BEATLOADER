@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
     /// Display two random glitch effects when the player takes damage.
     /// </summary>
     private void DisplayRandomGlitchEffect() {
-        if (!GameSettingsManager.FlashEffectsEnabled) { return; }
+        // if (!GameSettingsManager.FlashEffectsEnabled) { return; }
 
         for (int i = 0; i < 2; i++) {
             var glitchEffect = _glitchEffects.Rand(); // Extension method

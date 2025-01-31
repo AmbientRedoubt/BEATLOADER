@@ -52,6 +52,7 @@ public class GameSettingsManager : MonoBehaviour {
         get { return _flashEffectsEnabled; }
         set {
             _flashEffectsEnabled = value;
+            VHSGlitchEffectsManager.ToggleGlitchEffect();
         }
     }
 
@@ -59,14 +60,8 @@ public class GameSettingsManager : MonoBehaviour {
         get { return _VHSModeEnabled; }
         set {
             _VHSModeEnabled = value;
-            VHSVolumeManager.ToggleVHSMode();
+            VHSGlitchEffectsManager.ToggleVHSMode();
         }
-    }
-
-    private void InitialiseSettings() {
-        SetVolume(BusType.Master);
-        SetVolume(BusType.Music);
-        SetVolume(BusType.SFX);
     }
 
     private static void SetVolume(BusType busType) {

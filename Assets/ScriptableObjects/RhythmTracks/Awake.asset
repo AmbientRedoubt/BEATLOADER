@@ -166,8 +166,8 @@ MonoBehaviour:
         Data4: -2143615036
       Path: event:/Music/Awake/Notes/awake_note15
   - Time: 48
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.02
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1036111853
@@ -176,8 +176,8 @@ MonoBehaviour:
         Data4: -2035590880
       Path: event:/Music/Awake/Notes/awake_note16
   - Time: 49.77
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 3.22
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1936372531
@@ -186,8 +186,8 @@ MonoBehaviour:
         Data4: 488881152
       Path: event:/Music/Awake/Notes/awake_note17
   - Time: 49.89
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 5
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1213470361
@@ -196,7 +196,7 @@ MonoBehaviour:
         Data4: -173547259
       Path: event:/Music/Awake/Notes/awake_note18
   - Time: 50
-    Amplitude: 0
+    Amplitude: -1.74
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -206,8 +206,8 @@ MonoBehaviour:
         Data4: -714198459
       Path: event:/Music/Awake/Notes/awake_note19
   - Time: 51.03
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.1
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -818713588
@@ -216,7 +216,7 @@ MonoBehaviour:
         Data4: 755514067
       Path: event:/Music/Awake/Notes/awake_note20
   - Time: 52.7
-    Amplitude: 0
+    Amplitude: -3.94
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -226,7 +226,7 @@ MonoBehaviour:
         Data4: -715492607
       Path: event:/Music/Awake/Notes/awake_note21
   - Time: 52.85
-    Amplitude: 0
+    Amplitude: -2.99
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -236,7 +236,7 @@ MonoBehaviour:
         Data4: -249868799
       Path: event:/Music/Awake/Notes/awake_note22
   - Time: 52.97
-    Amplitude: 0
+    Amplitude: -0.57
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -246,7 +246,7 @@ MonoBehaviour:
         Data4: 1477304816
       Path: event:/Music/Awake/Notes/awake_note23
   - Time: 55
-    Amplitude: 0
+    Amplitude: -2.65
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -256,8 +256,8 @@ MonoBehaviour:
         Data4: 1867541134
       Path: event:/Music/Awake/Notes/awake_note24
   - Time: 56
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.86
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -2075443333
@@ -266,8 +266,8 @@ MonoBehaviour:
         Data4: 2143503482
       Path: event:/Music/Awake/Notes/awake_note25
   - Time: 57.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.42
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1059223290
@@ -276,7 +276,7 @@ MonoBehaviour:
         Data4: -1334782408
       Path: event:/Music/Awake/Notes/awake_note26
   - Time: 57.89
-    Amplitude: 0
+    Amplitude: -1.59
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -286,8 +286,8 @@ MonoBehaviour:
         Data4: 446496769
       Path: event:/Music/Awake/Notes/awake_note27
   - Time: 58
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.34
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1875012010
@@ -296,8 +296,8 @@ MonoBehaviour:
         Data4: -2104394411
       Path: event:/Music/Awake/Notes/awake_note28
   - Time: 60.72
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 5
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -796580823
@@ -306,7 +306,7 @@ MonoBehaviour:
         Data4: -1445310680
       Path: event:/Music/Awake/Notes/awake_note29
   - Time: 60.85
-    Amplitude: 0
+    Amplitude: -1.55
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -316,7 +316,7 @@ MonoBehaviour:
         Data4: 814504006
       Path: event:/Music/Awake/Notes/awake_note30
   - Time: 60.97
-    Amplitude: 0
+    Amplitude: -5
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -326,8 +326,8 @@ MonoBehaviour:
         Data4: -220054010
       Path: event:/Music/Awake/Notes/awake_note31
   - Time: 63
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.55
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1992693217
@@ -336,7 +336,7 @@ MonoBehaviour:
         Data4: -2126184012
       Path: event:/Music/Awake/Notes/awake_note32
   - Time: 64.01
-    Amplitude: 0
+    Amplitude: -3.14
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -346,8 +346,8 @@ MonoBehaviour:
         Data4: 815976956
       Path: event:/Music/Awake/Notes/awake_note33
   - Time: 65.74
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.48
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -229603565
@@ -356,8 +356,8 @@ MonoBehaviour:
         Data4: 299357214
       Path: event:/Music/Awake/Notes/awake_note34
   - Time: 65.87
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.74
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1788762131
@@ -366,7 +366,7 @@ MonoBehaviour:
         Data4: 1166690066
       Path: event:/Music/Awake/Notes/awake_note35
   - Time: 66
-    Amplitude: 0
+    Amplitude: -1.4
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -376,8 +376,8 @@ MonoBehaviour:
         Data4: -1034726627
       Path: event:/Music/Awake/Notes/awake_note36
   - Time: 66.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.68
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1377826491
@@ -396,7 +396,7 @@ MonoBehaviour:
         Data4: -1893559767
       Path: event:/Music/Awake/Notes/awake_note38
   - Time: 68.85
-    Amplitude: 0
+    Amplitude: -1.52
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -406,8 +406,8 @@ MonoBehaviour:
         Data4: -405841191
       Path: event:/Music/Awake/Notes/awake_note39
   - Time: 68.87
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.92
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1396156843
@@ -416,8 +416,8 @@ MonoBehaviour:
         Data4: 2128831427
       Path: event:/Music/Awake/Notes/awake_note40
   - Time: 71
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.14
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 834677135
@@ -426,7 +426,7 @@ MonoBehaviour:
         Data4: -400066772
       Path: event:/Music/Awake/Notes/awake_note41
   - Time: 72.01
-    Amplitude: 0
+    Amplitude: -2.73
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -446,8 +446,8 @@ MonoBehaviour:
         Data4: -7561790
       Path: event:/Music/Awake/Notes/awake_note43
   - Time: 73.87
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.48
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -396456111
@@ -456,7 +456,7 @@ MonoBehaviour:
         Data4: -1077883885
       Path: event:/Music/Awake/Notes/awake_note44
   - Time: 74
-    Amplitude: 0
+    Amplitude: 4.02
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -466,7 +466,7 @@ MonoBehaviour:
         Data4: -1441234576
       Path: event:/Music/Awake/Notes/awake_note45
   - Time: 74.52
-    Amplitude: 0
+    Amplitude: -1.86
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -476,8 +476,8 @@ MonoBehaviour:
         Data4: 1947512411
       Path: event:/Music/Awake/Notes/awake_note46
   - Time: 76.52
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.95
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1217579721
@@ -486,7 +486,7 @@ MonoBehaviour:
         Data4: -198398956
       Path: event:/Music/Awake/Notes/awake_note47
   - Time: 76.85
-    Amplitude: 0
+    Amplitude: -4.47
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -496,7 +496,7 @@ MonoBehaviour:
         Data4: 2028829692
       Path: event:/Music/Awake/Notes/awake_note48
   - Time: 76.95
-    Amplitude: 0
+    Amplitude: -1.36
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -506,8 +506,8 @@ MonoBehaviour:
         Data4: 1367292492
       Path: event:/Music/Awake/Notes/awake_note49
   - Time: 79
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.14
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 695332278
@@ -516,8 +516,8 @@ MonoBehaviour:
         Data4: 2095293227
       Path: event:/Music/Awake/Notes/awake_note50
   - Time: 80.03
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 3.9
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 995971770
@@ -526,8 +526,8 @@ MonoBehaviour:
         Data4: -1648532440
       Path: event:/Music/Awake/Notes/awake_note51
   - Time: 81.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 5
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 2030284258
@@ -536,8 +536,8 @@ MonoBehaviour:
         Data4: -157537758
       Path: event:/Music/Awake/Notes/awake_note52
   - Time: 82.03
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.61
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1535801721
@@ -546,7 +546,7 @@ MonoBehaviour:
         Data4: -676980320
       Path: event:/Music/Awake/Notes/awake_note53
   - Time: 84.01
-    Amplitude: 0
+    Amplitude: -2.8
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -556,8 +556,8 @@ MonoBehaviour:
         Data4: 734003114
       Path: event:/Music/Awake/Notes/awake_note54
   - Time: 88.04
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.21
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1221082297
@@ -566,7 +566,7 @@ MonoBehaviour:
         Data4: -1424767111
       Path: event:/Music/Awake/Notes/awake_note55
   - Time: 89.76
-    Amplitude: 0
+    Amplitude: -3.07
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -576,8 +576,8 @@ MonoBehaviour:
         Data4: 201866111
       Path: event:/Music/Awake/Notes/awake_note56
   - Time: 89.89
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 4.62
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1315777863
@@ -586,8 +586,8 @@ MonoBehaviour:
         Data4: -818694660
       Path: event:/Music/Awake/Notes/awake_note57
   - Time: 90
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.87
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1449875481
@@ -596,7 +596,7 @@ MonoBehaviour:
         Data4: -1747495097
       Path: event:/Music/Awake/Notes/awake_note58
   - Time: 90.5
-    Amplitude: 0
+    Amplitude: -2.01
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -606,8 +606,8 @@ MonoBehaviour:
         Data4: 1276515018
       Path: event:/Music/Awake/Notes/dropped note 1
   - Time: 92.75
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 3.14
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -643903705
@@ -616,7 +616,7 @@ MonoBehaviour:
         Data4: 344921779
       Path: event:/Music/Awake/Notes/awake_note59
   - Time: 92.89
-    Amplitude: 0
+    Amplitude: -3.86
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -626,8 +626,8 @@ MonoBehaviour:
         Data4: 1804167190
       Path: event:/Music/Awake/Notes/awake_note60
   - Time: 93.01
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 3.6
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1229631073
@@ -636,8 +636,8 @@ MonoBehaviour:
         Data4: 2010647889
       Path: event:/Music/Awake/Notes/awake_note61
   - Time: 95
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.1
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1005678018
@@ -646,7 +646,7 @@ MonoBehaviour:
         Data4: -1771252294
       Path: event:/Music/Awake/Notes/awake_note62
   - Time: 96
-    Amplitude: 0
+    Amplitude: -1.4
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -656,8 +656,8 @@ MonoBehaviour:
         Data4: -313462760
       Path: event:/Music/Awake/Notes/awake_note63
   - Time: 96.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.88
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1182064801
@@ -666,7 +666,7 @@ MonoBehaviour:
         Data4: -1494626108
       Path: event:/Music/Awake/Notes/awake_note64
   - Time: 97
-    Amplitude: 0
+    Amplitude: -4.02
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -676,8 +676,8 @@ MonoBehaviour:
         Data4: 1971136416
       Path: event:/Music/Awake/Notes/awake_note65
   - Time: 97.83
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.02
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -2109689464
@@ -686,7 +686,7 @@ MonoBehaviour:
         Data4: 1933742651
       Path: event:/Music/Awake/Notes/awake_note66
   - Time: 98
-    Amplitude: 0
+    Amplitude: -0.98
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -696,8 +696,8 @@ MonoBehaviour:
         Data4: 220016174
       Path: event:/Music/Awake/Notes/awake_note67
   - Time: 99
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 4.05
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1168739074
@@ -706,7 +706,7 @@ MonoBehaviour:
         Data4: 2024354419
       Path: event:/Music/Awake/Notes/awake_note68
   - Time: 99.48
-    Amplitude: 0
+    Amplitude: -3.45
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -716,7 +716,7 @@ MonoBehaviour:
         Data4: 533378572
       Path: event:/Music/Awake/Notes/awake_note69
   - Time: 100.75
-    Amplitude: 0
+    Amplitude: -1.02
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -726,8 +726,8 @@ MonoBehaviour:
         Data4: 1103033394
       Path: event:/Music/Awake/Notes/awake_note70
   - Time: 100.9
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.92
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 666808666
@@ -736,7 +736,7 @@ MonoBehaviour:
         Data4: 423200022
       Path: event:/Music/Awake/Notes/awake_note71
   - Time: 101.03
-    Amplitude: 0
+    Amplitude: -5
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -746,8 +746,8 @@ MonoBehaviour:
         Data4: -2096458372
       Path: event:/Music/Awake/Notes/awake_note72
   - Time: 102.97
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 5
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 720214613
@@ -756,7 +756,7 @@ MonoBehaviour:
         Data4: 754450677
       Path: event:/Music/Awake/Notes/awake_note73
   - Time: 104.02
-    Amplitude: 0
+    Amplitude: -1.63
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -766,8 +766,8 @@ MonoBehaviour:
         Data4: -1913382650
       Path: event:/Music/Awake/Notes/awake_note74
   - Time: 104.52
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.61
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1488175276
@@ -776,8 +776,8 @@ MonoBehaviour:
         Data4: -1578563510
       Path: event:/Music/Awake/Notes/awake_note75
   - Time: 104.99
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.91
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1542373310
@@ -786,7 +786,7 @@ MonoBehaviour:
         Data4: 1015103334
       Path: event:/Music/Awake/Notes/awake_note76
   - Time: 105.49
-    Amplitude: 0
+    Amplitude: -3.67
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -796,7 +796,7 @@ MonoBehaviour:
         Data4: 1669706477
       Path: event:/Music/Awake/Notes/awake_note77
   - Time: 106
-    Amplitude: 0
+    Amplitude: -1.29
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -806,7 +806,7 @@ MonoBehaviour:
         Data4: 294372444
       Path: event:/Music/Awake/Notes/awake_note78
   - Time: 108.75
-    Amplitude: 0
+    Amplitude: 1.7
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -816,8 +816,8 @@ MonoBehaviour:
         Data4: 144302463
       Path: event:/Music/Awake/Notes/awake_note79
   - Time: 108.88
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 4.13
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1371594491
@@ -826,7 +826,7 @@ MonoBehaviour:
         Data4: 1987007920
       Path: event:/Music/Awake/Notes/awake_note80
   - Time: 109.01
-    Amplitude: 0
+    Amplitude: -2.23
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -836,8 +836,8 @@ MonoBehaviour:
         Data4: 1243724431
       Path: event:/Music/Awake/Notes/awake_note81
   - Time: 111
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 4.51
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 664766070
@@ -846,7 +846,7 @@ MonoBehaviour:
         Data4: -1215640259
       Path: event:/Music/Awake/Notes/awake_note82
   - Time: 111.52
-    Amplitude: 0
+    Amplitude: -4.17
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -856,8 +856,8 @@ MonoBehaviour:
         Data4: -411446394
       Path: event:/Music/Awake/Notes/awake_note83
   - Time: 112.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.48
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1267899898
@@ -866,7 +866,7 @@ MonoBehaviour:
         Data4: 306626901
       Path: event:/Music/Awake/Notes/awake_note84
   - Time: 113.5
-    Amplitude: 0
+    Amplitude: -1.7
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -876,7 +876,7 @@ MonoBehaviour:
         Data4: 386522989
       Path: event:/Music/Awake/Notes/awake_note85
   - Time: 114.5
-    Amplitude: 0
+    Amplitude: -3.33
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -886,8 +886,8 @@ MonoBehaviour:
         Data4: -803200995
       Path: event:/Music/Awake/Notes/awake_note86
   - Time: 115.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 2.35
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 1012538399
@@ -896,8 +896,8 @@ MonoBehaviour:
         Data4: -485433075
       Path: event:/Music/Awake/Notes/dropped note 2
   - Time: 115.5
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.57
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: -1699315799
@@ -906,7 +906,7 @@ MonoBehaviour:
         Data4: 1297230128
       Path: event:/Music/Awake/Notes/dropped note 3
   - Time: 116.72
-    Amplitude: 0
+    Amplitude: -2.2
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -926,8 +926,8 @@ MonoBehaviour:
         Data4: 72178985
       Path: event:/Music/Awake/Notes/awake_note88
   - Time: 117
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 1.25
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 363777348
@@ -936,7 +936,7 @@ MonoBehaviour:
         Data4: -694705597
       Path: event:/Music/Awake/Notes/awake_note89
   - Time: 119
-    Amplitude: 0
+    Amplitude: -2.61
     InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
@@ -946,8 +946,8 @@ MonoBehaviour:
         Data4: -446467818
       Path: event:/Music/Awake/Notes/awake_note90
   - Time: 120
-    Amplitude: 0
-    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    Amplitude: 0.45
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     NoteSound:
       Guid:
         Data1: 338690166

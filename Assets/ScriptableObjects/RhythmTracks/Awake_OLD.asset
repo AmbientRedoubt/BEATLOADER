@@ -1,0 +1,967 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d348dbed55e3b0469fe6dadccc3b594, type: 3}
+  m_Name: Awake_OLD
+  m_EditorClassIdentifier: 
+  TrackLength: 127.299
+  BPM: 120
+  NoteInputs:
+  - Time: 20.75
+    Amplitude: 4.2
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -863146742
+        Data2: 1087585916
+        Data3: 1961752231
+        Data4: -1069088517
+      Path: event:/Music/Awake/Notes/awake_note14
+  - Time: 20.88
+    Amplitude: -1.38
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 942655440
+        Data2: 1258550805
+        Data3: 288976793
+        Data4: -1347334616
+      Path: event:/Music/Awake/Notes/awake_note2
+  - Time: 21
+    Amplitude: 1.59
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1125945316
+        Data2: 1283443210
+        Data3: 1311686586
+        Data4: 1829826137
+      Path: event:/Music/Awake/Notes/awake_note3
+  - Time: 24
+    Amplitude: -0.85
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -199600102
+        Data2: 1182887261
+        Data3: -357178960
+        Data4: 1147883439
+      Path: event:/Music/Awake/Notes/awake_note4
+  - Time: 26
+    Amplitude: -4.55
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1156150151
+        Data2: 1103802859
+        Data3: 611260607
+        Data4: -312950644
+      Path: event:/Music/Awake/Notes/awake_note5
+  - Time: 28.75
+    Amplitude: 1.32
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1863389751
+        Data2: 1286694046
+        Data3: -471528303
+        Data4: 1834194896
+      Path: event:/Music/Awake/Notes/awake_note6
+  - Time: 28.88
+    Amplitude: 3.12
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1416039034
+        Data2: 1221515361
+        Data3: -1357688676
+        Data4: -1328999710
+      Path: event:/Music/Awake/Notes/awake_note7
+  - Time: 29
+    Amplitude: -1.2
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1090665674
+        Data2: 1320553666
+        Data3: 1750646973
+        Data4: -690614618
+      Path: event:/Music/Awake/Notes/awake_note8
+  - Time: 32
+    Amplitude: 1.5
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 746270559
+        Data2: 1114192413
+        Data3: 148880829
+        Data4: -683802314
+      Path: event:/Music/Awake/Notes/awake_note9
+  - Time: 34
+    Amplitude: 0.74
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 167075478
+        Data2: 1266514087
+        Data3: -54198867
+        Data4: 1431923603
+      Path: event:/Music/Awake/Notes/awake_note10
+  - Time: 36.05
+    Amplitude: -0.64
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 724573685
+        Data2: 1287374747
+        Data3: 1387783080
+        Data4: -767196615
+      Path: event:/Music/Awake/Notes/awake_note11
+  - Time: 39
+    Amplitude: -1.2
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 245486148
+        Data2: 1322898477
+        Data3: 904955825
+        Data4: -1843459957
+      Path: event:/Music/Awake/Notes/awake_note12
+  - Time: 40.03
+    Amplitude: 3.4
+    InputAction: {fileID: 6497078886083388838, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1543420585
+        Data2: 1290765263
+        Data3: 698325438
+        Data4: 1018434819
+      Path: event:/Music/Awake/Notes/awake_note13
+  - Time: 44
+    Amplitude: -1.17
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -863146742
+        Data2: 1087585916
+        Data3: 1961752231
+        Data4: -1069088517
+      Path: event:/Music/Awake/Notes/awake_note14
+  - Time: 47
+    Amplitude: -2.12
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1716669507
+        Data2: 1196663873
+        Data3: 895190912
+        Data4: -2143615036
+      Path: event:/Music/Awake/Notes/awake_note15
+  - Time: 48
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1036111853
+        Data2: 1077609417
+        Data3: 1437910410
+        Data4: -2035590880
+      Path: event:/Music/Awake/Notes/awake_note16
+  - Time: 49.77
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1936372531
+        Data2: 1239207419
+        Data3: 1246917527
+        Data4: 488881152
+      Path: event:/Music/Awake/Notes/awake_note17
+  - Time: 49.89
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1213470361
+        Data2: 1313238946
+        Data3: 1356366776
+        Data4: -173547259
+      Path: event:/Music/Awake/Notes/awake_note18
+  - Time: 50
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 910452502
+        Data2: 1228658996
+        Data3: -1803186557
+        Data4: -714198459
+      Path: event:/Music/Awake/Notes/awake_note19
+  - Time: 51.03
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -818713588
+        Data2: 1172592412
+        Data3: 706006409
+        Data4: 755514067
+      Path: event:/Music/Awake/Notes/awake_note20
+  - Time: 52.7
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -446948359
+        Data2: 1099571121
+        Data3: -400517969
+        Data4: -715492607
+      Path: event:/Music/Awake/Notes/awake_note21
+  - Time: 52.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 674985303
+        Data2: 1267156818
+        Data3: -510789495
+        Data4: -249868799
+      Path: event:/Music/Awake/Notes/awake_note22
+  - Time: 52.97
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 401384980
+        Data2: 1147824016
+        Data3: -229215601
+        Data4: 1477304816
+      Path: event:/Music/Awake/Notes/awake_note23
+  - Time: 55
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -622018386
+        Data2: 1210706950
+        Data3: -398501958
+        Data4: 1867541134
+      Path: event:/Music/Awake/Notes/awake_note24
+  - Time: 56
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -2075443333
+        Data2: 1289857508
+        Data3: 1264037263
+        Data4: 2143503482
+      Path: event:/Music/Awake/Notes/awake_note25
+  - Time: 57.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1059223290
+        Data2: 1149345621
+        Data3: -1572836711
+        Data4: -1334782408
+      Path: event:/Music/Awake/Notes/awake_note26
+  - Time: 57.89
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -602504975
+        Data2: 1161744394
+        Data3: -23935310
+        Data4: 446496769
+      Path: event:/Music/Awake/Notes/awake_note27
+  - Time: 58
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1875012010
+        Data2: 1189392745
+        Data3: -1944288340
+        Data4: -2104394411
+      Path: event:/Music/Awake/Notes/awake_note28
+  - Time: 60.72
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -796580823
+        Data2: 1076454613
+        Data3: -1207931999
+        Data4: -1445310680
+      Path: event:/Music/Awake/Notes/awake_note29
+  - Time: 60.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1568973605
+        Data2: 1201617712
+        Data3: 30994056
+        Data4: 814504006
+      Path: event:/Music/Awake/Notes/awake_note30
+  - Time: 60.97
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 820509577
+        Data2: 1223198080
+        Data3: 1206097336
+        Data4: -220054010
+      Path: event:/Music/Awake/Notes/awake_note31
+  - Time: 63
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1992693217
+        Data2: 1270638475
+        Data3: 653241264
+        Data4: -2126184012
+      Path: event:/Music/Awake/Notes/awake_note32
+  - Time: 64.01
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1637664195
+        Data2: 1323218522
+        Data3: -28709242
+        Data4: 815976956
+      Path: event:/Music/Awake/Notes/awake_note33
+  - Time: 65.74
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -229603565
+        Data2: 1195480047
+        Data3: 801079180
+        Data4: 299357214
+      Path: event:/Music/Awake/Notes/awake_note34
+  - Time: 65.87
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1788762131
+        Data2: 1182206150
+        Data3: 1174339261
+        Data4: 1166690066
+      Path: event:/Music/Awake/Notes/awake_note35
+  - Time: 66
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -408791614
+        Data2: 1331802976
+        Data3: -1816208705
+        Data4: -1034726627
+      Path: event:/Music/Awake/Notes/awake_note36
+  - Time: 66.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1377826491
+        Data2: 1255272503
+        Data3: 1359628984
+        Data4: 1360284149
+      Path: event:/Music/Awake/Notes/awake_note37
+  - Time: 68.72
+    Amplitude: -3.53
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 724321384
+        Data2: 1168071851
+        Data3: 303204997
+        Data4: -1893559767
+      Path: event:/Music/Awake/Notes/awake_note38
+  - Time: 68.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1849414918
+        Data2: 1333174853
+        Data3: -1014114898
+        Data4: -405841191
+      Path: event:/Music/Awake/Notes/awake_note39
+  - Time: 68.87
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1396156843
+        Data2: 1280513473
+        Data3: 1154468280
+        Data4: 2128831427
+      Path: event:/Music/Awake/Notes/awake_note40
+  - Time: 71
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 834677135
+        Data2: 1208467331
+        Data3: -409335148
+        Data4: -400066772
+      Path: event:/Music/Awake/Notes/awake_note41
+  - Time: 72.01
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1251522974
+        Data2: 1247914990
+        Data3: 810474629
+        Data4: -1612091411
+      Path: event:/Music/Awake/Notes/awake_note42
+  - Time: 73.76
+    Amplitude: -4.16
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -577394910
+        Data2: 1111296364
+        Data3: 294123439
+        Data4: -7561790
+      Path: event:/Music/Awake/Notes/awake_note43
+  - Time: 73.87
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -396456111
+        Data2: 1200426425
+        Data3: 1837489338
+        Data4: -1077883885
+      Path: event:/Music/Awake/Notes/awake_note44
+  - Time: 74
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1896925639
+        Data2: 1326104083
+        Data3: 321217933
+        Data4: -1441234576
+      Path: event:/Music/Awake/Notes/awake_note45
+  - Time: 74.52
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 607899085
+        Data2: 1225175282
+        Data3: 218314133
+        Data4: 1947512411
+      Path: event:/Music/Awake/Notes/awake_note46
+  - Time: 76.52
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1217579721
+        Data2: 1303563997
+        Data3: -679849563
+        Data4: -198398956
+      Path: event:/Music/Awake/Notes/awake_note47
+  - Time: 76.85
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 237129617
+        Data2: 1334299804
+        Data3: -227315554
+        Data4: 2028829692
+      Path: event:/Music/Awake/Notes/awake_note48
+  - Time: 76.95
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1775942958
+        Data2: 1192119885
+        Data3: -1042635601
+        Data4: 1367292492
+      Path: event:/Music/Awake/Notes/awake_note49
+  - Time: 79
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 695332278
+        Data2: 1106798773
+        Data3: -1333822836
+        Data4: 2095293227
+      Path: event:/Music/Awake/Notes/awake_note50
+  - Time: 80.03
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 995971770
+        Data2: 1093782915
+        Data3: -303310429
+        Data4: -1648532440
+      Path: event:/Music/Awake/Notes/awake_note51
+  - Time: 81.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 2030284258
+        Data2: 1131888158
+        Data3: -1227127635
+        Data4: -157537758
+      Path: event:/Music/Awake/Notes/awake_note52
+  - Time: 82.03
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1535801721
+        Data2: 1220712067
+        Data3: 672973698
+        Data4: -676980320
+      Path: event:/Music/Awake/Notes/awake_note53
+  - Time: 84.01
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1403826487
+        Data2: 1076114579
+        Data3: 344757647
+        Data4: 734003114
+      Path: event:/Music/Awake/Notes/awake_note54
+  - Time: 88.04
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1221082297
+        Data2: 1316922967
+        Data3: -284407371
+        Data4: -1424767111
+      Path: event:/Music/Awake/Notes/awake_note55
+  - Time: 89.76
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 356048539
+        Data2: 1223745968
+        Data3: -311470185
+        Data4: 201866111
+      Path: event:/Music/Awake/Notes/awake_note56
+  - Time: 89.89
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1315777863
+        Data2: 1327118194
+        Data3: 765025467
+        Data4: -818694660
+      Path: event:/Music/Awake/Notes/awake_note57
+  - Time: 90
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1449875481
+        Data2: 1333527142
+        Data3: -1422689124
+        Data4: -1747495097
+      Path: event:/Music/Awake/Notes/awake_note58
+  - Time: 90.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1728053399
+        Data2: 1105472207
+        Data3: -268089464
+        Data4: 1276515018
+      Path: event:/Music/Awake/Notes/dropped note 1
+  - Time: 92.75
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -643903705
+        Data2: 1298736928
+        Data3: 413097626
+        Data4: 344921779
+      Path: event:/Music/Awake/Notes/awake_note59
+  - Time: 92.89
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1073929252
+        Data2: 1163621650
+        Data3: -1443462264
+        Data4: 1804167190
+      Path: event:/Music/Awake/Notes/awake_note60
+  - Time: 93.01
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1229631073
+        Data2: 1109909412
+        Data3: 1843730107
+        Data4: 2010647889
+      Path: event:/Music/Awake/Notes/awake_note61
+  - Time: 95
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1005678018
+        Data2: 1209423997
+        Data3: 2057034413
+        Data4: -1771252294
+      Path: event:/Music/Awake/Notes/awake_note62
+  - Time: 96
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1144742924
+        Data2: 1279062031
+        Data3: -753944675
+        Data4: -313462760
+      Path: event:/Music/Awake/Notes/awake_note63
+  - Time: 96.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1182064801
+        Data2: 1237382671
+        Data3: 2112682383
+        Data4: -1494626108
+      Path: event:/Music/Awake/Notes/awake_note64
+  - Time: 97
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1455692774
+        Data2: 1312908496
+        Data3: -1804116555
+        Data4: 1971136416
+      Path: event:/Music/Awake/Notes/awake_note65
+  - Time: 97.83
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -2109689464
+        Data2: 1201420760
+        Data3: 532356779
+        Data4: 1933742651
+      Path: event:/Music/Awake/Notes/awake_note66
+  - Time: 98
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -230895862
+        Data2: 1140724953
+        Data3: -1059154266
+        Data4: 220016174
+      Path: event:/Music/Awake/Notes/awake_note67
+  - Time: 99
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1168739074
+        Data2: 1217344447
+        Data3: -1087390793
+        Data4: 2024354419
+      Path: event:/Music/Awake/Notes/awake_note68
+  - Time: 99.48
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1351081260
+        Data2: 1174988344
+        Data3: -211211375
+        Data4: 533378572
+      Path: event:/Music/Awake/Notes/awake_note69
+  - Time: 100.75
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 52746781
+        Data2: 1338979472
+        Data3: 2140344455
+        Data4: 1103033394
+      Path: event:/Music/Awake/Notes/awake_note70
+  - Time: 100.9
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 666808666
+        Data2: 1112370285
+        Data3: 1535472531
+        Data4: 423200022
+      Path: event:/Music/Awake/Notes/awake_note71
+  - Time: 101.03
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1230973589
+        Data2: 1299517449
+        Data3: 1036979084
+        Data4: -2096458372
+      Path: event:/Music/Awake/Notes/awake_note72
+  - Time: 102.97
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 720214613
+        Data2: 1259334841
+        Data3: -561060990
+        Data4: 754450677
+      Path: event:/Music/Awake/Notes/awake_note73
+  - Time: 104.02
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -623480253
+        Data2: 1111352992
+        Data3: 1146907837
+        Data4: -1913382650
+      Path: event:/Music/Awake/Notes/awake_note74
+  - Time: 104.52
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1488175276
+        Data2: 1139074920
+        Data3: 942251149
+        Data4: -1578563510
+      Path: event:/Music/Awake/Notes/awake_note75
+  - Time: 104.99
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1542373310
+        Data2: 1081285329
+        Data3: -1803186270
+        Data4: 1015103334
+      Path: event:/Music/Awake/Notes/awake_note76
+  - Time: 105.49
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 860008577
+        Data2: 1303339114
+        Data3: 266232964
+        Data4: 1669706477
+      Path: event:/Music/Awake/Notes/awake_note77
+  - Time: 106
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -596265215
+        Data2: 1293101961
+        Data3: 58467751
+        Data4: 294372444
+      Path: event:/Music/Awake/Notes/awake_note78
+  - Time: 108.75
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -213404321
+        Data2: 1150188892
+        Data3: -296954449
+        Data4: 144302463
+      Path: event:/Music/Awake/Notes/awake_note79
+  - Time: 108.88
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1371594491
+        Data2: 1215781352
+        Data3: -1067549797
+        Data4: 1987007920
+      Path: event:/Music/Awake/Notes/awake_note80
+  - Time: 109.01
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 310012229
+        Data2: 1245281746
+        Data3: -586149732
+        Data4: 1243724431
+      Path: event:/Music/Awake/Notes/awake_note81
+  - Time: 111
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 664766070
+        Data2: 1184361870
+        Data3: 69957294
+        Data4: -1215640259
+      Path: event:/Music/Awake/Notes/awake_note82
+  - Time: 111.52
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -499631243
+        Data2: 1191575609
+        Data3: 340944534
+        Data4: -411446394
+      Path: event:/Music/Awake/Notes/awake_note83
+  - Time: 112.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1267899898
+        Data2: 1102479684
+        Data3: -1299038560
+        Data4: 306626901
+      Path: event:/Music/Awake/Notes/awake_note84
+  - Time: 113.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1540742116
+        Data2: 1302351999
+        Data3: 473183403
+        Data4: 386522989
+      Path: event:/Music/Awake/Notes/awake_note85
+  - Time: 114.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -583353310
+        Data2: 1175251515
+        Data3: -1596059465
+        Data4: -803200995
+      Path: event:/Music/Awake/Notes/awake_note86
+  - Time: 115.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1012538399
+        Data2: 1075782255
+        Data3: 1339070336
+        Data4: -485433075
+      Path: event:/Music/Awake/Notes/dropped note 2
+  - Time: 115.5
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -1699315799
+        Data2: 1227435373
+        Data3: -2009970531
+        Data4: 1297230128
+      Path: event:/Music/Awake/Notes/dropped note 3
+  - Time: 116.72
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: -878639411
+        Data2: 1158077195
+        Data3: -1047233903
+        Data4: -815110231
+      Path: event:/Music/Awake/Notes/awake_note87
+  - Time: 116.89
+    Amplitude: -4.53
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 373259167
+        Data2: 1079036275
+        Data3: 805516450
+        Data4: 72178985
+      Path: event:/Music/Awake/Notes/awake_note88
+  - Time: 117
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 363777348
+        Data2: 1149541386
+        Data3: 1100469394
+        Data4: -694705597
+      Path: event:/Music/Awake/Notes/awake_note89
+  - Time: 119
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1968985840
+        Data2: 1299941521
+        Data3: 762128257
+        Data4: -446467818
+      Path: event:/Music/Awake/Notes/awake_note90
+  - Time: 120
+    Amplitude: 0
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 338690166
+        Data2: 1291348073
+        Data3: -1422003782
+        Data4: -1986702095
+      Path: event:/Music/Awake/Notes/awake_note91
+  - Time: 124
+    Amplitude: 1.92
+    InputAction: {fileID: -7570385650561213468, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    NoteSound:
+      Guid:
+        Data1: 1984467467
+        Data2: 1306504140
+        Data3: -1331302249
+        Data4: -662037027
+      Path: event:/Music/Awake/Notes/awake_note92

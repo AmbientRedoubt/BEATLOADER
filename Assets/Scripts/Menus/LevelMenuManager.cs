@@ -9,6 +9,7 @@ public class LevelMenuManager : MonoBehaviour {
     [SerializeField] private EventReference _pauseSound;
     [SerializeField] private EventReference _unpauseSound;
     [SerializeField] private EventReference _countdownSound;
+    [SerializeField] private EventReference _gameOverSound;
     [Header("UI Elements")]
     [SerializeField] private Canvas _canvas;
     [SerializeField] private RawImage _backgroundImage;
@@ -54,7 +55,7 @@ public class LevelMenuManager : MonoBehaviour {
                 _backgroundImage.enabled = true;
                 _canvasOutline.enabled = true;
                 _gameOverMenu.SetActive(true);
-                AudioManager.PlayOneShot(_pauseSound);
+                AudioManager.PlayOneShot(_gameOverSound);
                 break;
         }
     }

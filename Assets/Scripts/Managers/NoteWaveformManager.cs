@@ -36,7 +36,7 @@ public class NoteWaveformManager : MonoBehaviour {
 
         NoteInput nextNote = _rhythmTrack.NoteInputs[_nextNoteIndex];
 
-        TryInstantiateWaveform();
+        // TryInstantiateWaveform();
 
         // Wait until the next frame
         if (_elapsedFrameTime >= _oneFrameTime) {
@@ -118,8 +118,6 @@ public class NoteWaveformManager : MonoBehaviour {
             }
         }
     }
-
-
 
     private GameObject InstantiateNewWaveform(List<GameObject> waveforms) {
         Vector2 waveformPosition = new(_newGameObjectPositionX, 0);

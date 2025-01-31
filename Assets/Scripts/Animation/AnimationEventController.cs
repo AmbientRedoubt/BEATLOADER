@@ -1,23 +1,23 @@
 using UnityEngine;
 
 public class AnimationEventController : MonoBehaviour {
-    [SerializeField] private SpriteRenderer _playerSprite;
-    [SerializeField] private SpriteRenderer _noteHitSprite;
-    [SerializeField] private Sprite _underscoreSprite;
-
+    [SerializeField] private SpriteRenderer _playerSpriteRenderer;
+    [SerializeField] private SpriteRenderer _noteHitRenderer;
+    [SerializeField] private SpriteRenderer _animationSpriteRenderer;
+    [SerializeField] private GameObject _introAnimationController;
+    [SerializeField] private GameObject _underscoreSprite;
     private void Start() {
-        _playerSprite.enabled = false;
-        _noteHitSprite.enabled = false;
-    }
-
-    // Called by the intro animation event
-    private void EnablePlayerSprite() {
-        _playerSprite.enabled = true;
-        _noteHitSprite.enabled = true;
+        _playerSpriteRenderer.enabled = false;
+        _noteHitRenderer.enabled = false;
+        _underscoreSprite.SetActive(false);
+        _introAnimationController.SetActive(true);
     }
 
     // Replace the intro animation with the underscore sprite
     private void ReplaceIntroAnimation() {
-        GetComponent<SpriteRenderer>().sprite = _underscoreSprite;
+        _playerSpriteRenderer.enabled = true;
+        _noteHitRenderer.enabled = true;
+        _underscoreSprite.SetActive(true);
+        _introAnimationController.SetActive(false);
     }
 }

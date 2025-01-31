@@ -44,7 +44,13 @@ TagManager:
   - name: Notes and Waveforms
     uniqueID: 510063505
     locked: 0
-  - name: New Layer 3
+  - name: Wave Blocker
+    uniqueID: 2198093251
+    locked: 0
+  - name: Player
+    uniqueID: 4118369885
+    locked: 0
+  - name: Glitches
     uniqueID: 2851106689
     locked: 0
   - name: UI

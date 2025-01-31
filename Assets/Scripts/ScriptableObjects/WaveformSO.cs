@@ -3,17 +3,17 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewWaveform", menuName = "Waveform")]
 public class WaveformSO : ScriptableObject {
-    public List<WaveformObject> Waveforms;
-}
-
-[System.Serializable]
-public class WaveformObject {
-    public int Length;
     public WaveformType Type;
-    public List<GameObject> GameObjects;
+    public List<GameObject> Waveforms;
 }
 
 public enum WaveformType {
-    Up,
-    Down
+    ThreeDown,
+    ThreeUp,
+    FourDown,
+    FourUp,
+    FiveDown,
+    FiveUp,
+    SevenDown,
+    SevenUp
 }

@@ -7,11 +7,13 @@ public class PlayerAudioHandler : MonoBehaviour {
     [SerializeField] private EventReference _noteHitSound;
     [SerializeField] private EventReference _noteMissSound;
     [SerializeField] private EventReference _noteHoldSound;
+    [SerializeField] private EventReference _gameOverSound;
     [SerializeField] private List<EventReference> _glitchSFXList;
 
     private void Awake() {
         PlayerEvents.OnNoteHit += OnNoteHit;
         PlayerEvents.OnNoteMiss += OnNoteMiss;
+        GameManager.OnGameStateChanged += OnGameOver;
     }
 
     public void OnJump() {
@@ -36,5 +38,11 @@ public class PlayerAudioHandler : MonoBehaviour {
     private void OnDestroy() {
         PlayerEvents.OnNoteHit -= OnNoteHit;
         PlayerEvents.OnNoteMiss -= OnNoteMiss;
+        GameManager.OnGameStateChanged -= OnGameOver;
+    }
+
+    private void OnGameOver(GameState gameState) {
+        if (gameState != GameState.GameOver) { return; }
+        AudioManager.PlayOneShot(_gameOverSound);
     }
 }

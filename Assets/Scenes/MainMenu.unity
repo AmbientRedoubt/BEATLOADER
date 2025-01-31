@@ -4545,11 +4545,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _music:
     Guid:
-      Data1: 554888333
-      Data2: 1281632952
-      Data3: 52707765
-      Data4: -1133497613
-    Path: event:/Music/thumper_triangle
+      Data1: -853602791
+      Data2: 1186993664
+      Data3: 321454490
+      Data4: 279971568
+    Path: event:/Music/Main Menu Music
   _clickSound:
     Guid:
       Data1: -1110841821

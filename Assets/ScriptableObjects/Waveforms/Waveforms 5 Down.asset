@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356432c8c52e926428842dde3b938e76, type: 3}
+  m_Name: Waveforms 5 Down
+  m_EditorClassIdentifier: 
+  Type: 4
+  Waveforms:
+  - {fileID: 7791451650562688926, guid: 490959d7fbca0ec46914eb10951eea78, type: 3}
+  - {fileID: 5701493291345722990, guid: cf8670806eb98054398d0503da328bbf, type: 3}

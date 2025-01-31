@@ -1,7 +1,6 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
-using System.Collections.Generic;
 
 public class LevelAudioManager : MonoBehaviour {
     [SerializeField] private EventReference _clickSound;

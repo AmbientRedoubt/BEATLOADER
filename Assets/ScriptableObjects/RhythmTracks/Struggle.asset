@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d348dbed55e3b0469fe6dadccc3b594, type: 3}
   m_Name: Struggle
   m_EditorClassIdentifier: 
+  Length: 99.428
   BPM: 120
   NoteInputs:
   - Time: 1.72

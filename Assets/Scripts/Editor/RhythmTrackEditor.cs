@@ -4,16 +4,19 @@ using System.Linq;
 
 [CustomEditor(typeof(RhythmTrack))]
 public class RhythmTrackEditor : Editor {
+    private SerializedProperty _trackLengthProp;
     private SerializedProperty _bpmProp;
     private SerializedProperty _noteInputsProp;
 
     private void OnEnable() {
+        _trackLengthProp = serializedObject.FindProperty("TrackLength");
         _bpmProp = serializedObject.FindProperty("BPM");
         _noteInputsProp = serializedObject.FindProperty("NoteInputs");
     }
 
     public override void OnInspectorGUI() {
         serializedObject.Update();
+        EditorGUILayout.PropertyField(_trackLengthProp);
         EditorGUILayout.PropertyField(_bpmProp);
         // SortNotesByTime();
 

@@ -11,18 +11,14 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private PlayerAudioHandler _playerAudio;
     [SerializeField] private PlayerInputHandler _playerInput;
     [SerializeField] private PlayerMovementController _playerMovement;
-    [SerializeField] private int _health = 4;
+    [SerializeField] private int _health = 3;
     [SerializeField] private List<GameObject> _glitchEffects;
-    public static PlayerController Instance { get; private set; }
 
     private void Awake() {
         PlayerEvents.OnNoteMiss += TakeDamage;
-        Instance = this;
     }
 
     public void TakeDamage() {
-        _health--;
-
         if (_health > 0) {
             DisplayRandomGlitchEffect();
         }
@@ -30,6 +26,7 @@ public class PlayerController : MonoBehaviour {
         if (_health == 0) {
             GameManager.UpdateGameState(GameState.GameOver);
         }
+        _health--;
     }
 
     /// <summary>

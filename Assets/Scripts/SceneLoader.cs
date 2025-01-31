@@ -36,5 +36,6 @@ public enum Scene {
     LoadingScreen,
     MainMenu,
     ZeroDay,
-    ClockCycle
+    ClockCycle,
+    ShellInjection
 }

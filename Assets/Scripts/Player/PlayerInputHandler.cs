@@ -5,11 +5,7 @@ public class PlayerInputHandler : MonoBehaviour {
     [Tooltip("Time in seconds which the players input is still counted before/after the beat.")]
     [SerializeField] private float _inputWindow = 0.2f;
     [SerializeField] private bool _canQuickRestart = false;
-    private RhythmTrack _rhythmTrack;
-
-    private void Start() {
-        _rhythmTrack = RhythmTrackManager.Instance.RhythmTrack;
-    }
+    [SerializeField] private RhythmTrack _rhythmTrack;
 
     private void Update() {
         if (GameManager.CurrentState == GameState.Paused) { return; }
@@ -17,22 +13,32 @@ public class PlayerInputHandler : MonoBehaviour {
         // No more inputs to check
         if (_nextInputIndex >= _rhythmTrack.NoteInputs.Length) { return; }
 
-        float currentTime = Time.time - RhythmTrackManager.TrackStartTime;
-        NoteInput nextExpectedNote = _rhythmTrack.NoteInputs[_nextInputIndex];
+        float currentTime = LevelManager.CurrentTime;
+        NoteInput nextNote = _rhythmTrack.NoteInputs[_nextInputIndex];
 
-        if (Mathf.Abs(nextExpectedNote.Time - currentTime) <= _inputWindow) {
-            if (nextExpectedNote.InputAction.action.triggered) {
-                // Debug.Log($"Hit! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
-                PlayerEvents.OnNoteHit?.Invoke(nextExpectedNote);
-                _nextInputIndex++;
-            }
+        // Check if the player hit the note
+        if (IsNoteHit(nextNote, currentTime)) {
+            // Debug.Log($"Hit! Action: {nextNote.InputAction.name} at {currentTime}");
+            PlayerEvents.OnNoteHit?.Invoke(nextNote);
+            _nextInputIndex++;
         }
 
-        else if (currentTime > nextExpectedNote.Time + _inputWindow) {
-            // Debug.Log($"Missed! Action: {nextExpectedNote.InputAction.name} at {currentTime}");
+        // Missed the note
+        else if (IsNoteMissed(nextNote, currentTime)) {
+            // Debug.Log($"Missed! Action: {nextNote.InputAction.name} at {currentTime}");
             PlayerEvents.OnNoteMiss?.Invoke();
             _nextInputIndex++;
         }
+    }
+
+    private bool IsNoteHit(NoteInput noteInput, float currentTime) {
+        bool isHit = Mathf.Abs(noteInput.Time - currentTime) <= _inputWindow;
+        bool isCorrectInput = noteInput.InputAction.action.triggered;
+        return isHit && isCorrectInput;
+    }
+
+    private bool IsNoteMissed(NoteInput noteInput, float currentTime) {
+        return currentTime > noteInput.Time + _inputWindow;
     }
 
     private void OnUp() {

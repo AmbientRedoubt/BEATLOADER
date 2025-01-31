@@ -41,7 +41,6 @@ public class GameSettingsManager : MonoBehaviour {
         }
     }
 
-    //TODO: Implement screen shake toggle
     public static bool ScreenShakeEnabled {
         get { return _screenShakeEnabled; }
         set {
@@ -61,18 +60,6 @@ public class GameSettingsManager : MonoBehaviour {
         set {
             _VHSModeEnabled = value;
             VHSVolumeManager.ToggleVHSMode();
-        }
-    }
-
-    public static GameSettingsManager Instance { get; private set; }
-
-    private void Awake() {
-        if (Instance != null && Instance != this) {
-            Destroy(this);
-        }
-        else {
-            Instance = this;
-            InitialiseSettings();
         }
     }
 

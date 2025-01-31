@@ -7,7 +7,6 @@ public class MainMenuManager : MonoBehaviour {
     [SerializeField] private GameObject _creditsMenu;
 
     private void Awake() {
-        GameManager.OnGameStateChanged += GameManagerOnStateChanged;
         GameManager.UpdateGameState(GameState.MainMenu);
     }
 
@@ -28,12 +27,5 @@ public class MainMenuManager : MonoBehaviour {
 #endif
         // Application.OpenURL("https://ambientredoubt.itch.io/beatloader");
         Application.Quit();
-    }
-
-    private void GameManagerOnStateChanged(GameState state) {
-    }
-
-    private void OnDestroy() {
-        GameManager.OnGameStateChanged -= GameManagerOnStateChanged;
     }
 }

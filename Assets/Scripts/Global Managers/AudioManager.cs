@@ -8,17 +8,9 @@ using FMOD.Studio;
 /// </summary>
 public class AudioManager : MonoBehaviour {
     private static readonly List<EventInstance> _eventInstances = new();
-    // private EVENT_CALLBACK _eventCallback;
-    public static AudioManager Instance { get; private set; }
 
     private void Awake() {
-        if (Instance != null && Instance != this) {
-            Destroy(this);
-        }
-        else {
-            Instance = this;
-            GameManager.OnGameStateChanged += TogglePauseGame;
-        }
+        GameManager.OnGameStateChanged += TogglePauseGame;
     }
 
     public static void PlayOneShot(EventReference eventReference) {

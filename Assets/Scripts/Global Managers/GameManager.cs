@@ -7,21 +7,6 @@ using System;
 public class GameManager : MonoBehaviour {
     public static GameState CurrentState { get; private set; }
     public static event Action<GameState> OnGameStateChanged;
-    public static GameManager Instance { get; private set; }
-
-    private void Awake() {
-        if (Instance != null && Instance != this) {
-            Destroy(this);
-        }
-        else {
-            Instance = this;
-        }
-    }
-
-    private void Start() {
-        // DisableMouseCursor();
-        // UpdateGameState(GameState.MainMenu);
-    }
 
     public static void ToggleMouseCursor(MouseState state) {
         if (state == MouseState.Enabled) {

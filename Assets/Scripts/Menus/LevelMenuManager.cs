@@ -68,7 +68,6 @@ public class LevelMenuManager : MonoBehaviour {
         _pauseMenu.SetActive(false);
         _backgroundImage.enabled = false;
         _canvasOutline.enabled = false;
-        AudioManager.PlayOneShot(_unpauseSound);
         StartCoroutine(CountdownToResume());
     }
 
@@ -82,11 +81,11 @@ public class LevelMenuManager : MonoBehaviour {
         _countdownModal.SetActive(false);
         _canvas.enabled = false;
         _isCountingDown = false;
+        AudioManager.PlayOneShot(_unpauseSound);
         GameManager.UpdateGameState(GameState.Playing);
     }
 
     public void OnMainMenuButtonClicked() {
-        GameManager.UpdateGameState(GameState.MainMenu);
         SceneLoader.LoadSceneLoadingScreenAsync(Scene.MainMenu);
     }
 

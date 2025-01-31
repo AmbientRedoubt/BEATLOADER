@@ -34,19 +34,19 @@ public class NoteWaveformManager : MonoBehaviour {
         _currentTime = LevelManager.CurrentTime;
         _elapsedFrameTime += Time.deltaTime;
 
-        NoteInput nextNote = _rhythmTrack.NoteInputs[_nextNoteIndex];
-
         // TryInstantiateWaveform();
 
         // Wait until the next frame
         if (_elapsedFrameTime >= _oneFrameTime) {
             _elapsedFrameTime -= _oneFrameTime;
             UpdateNotes();
-            UpdateWaveforms();
+            // UpdateWaveforms();
         }
 
         // No more notes to instantiate
         if (_nextNoteIndex >= _rhythmTrack.NoteInputs.Length) { return; }
+
+        NoteInput nextNote = _rhythmTrack.NoteInputs[_nextNoteIndex];
 
         // Check if we should instantiate the next note
         if (IsNoteWithinTelegraphWindow(nextNote)) {

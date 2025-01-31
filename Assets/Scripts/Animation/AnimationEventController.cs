@@ -3,6 +3,7 @@ using UnityEngine;
 public class AnimationEventController : MonoBehaviour {
     [SerializeField] private SpriteRenderer _playerSprite;
     [SerializeField] private SpriteRenderer _noteHitSprite;
+    [SerializeField] private Sprite _underscoreSprite;
 
     private void Start() {
         _playerSprite.enabled = false;
@@ -13,5 +14,10 @@ public class AnimationEventController : MonoBehaviour {
     private void EnablePlayerSprite() {
         _playerSprite.enabled = true;
         _noteHitSprite.enabled = true;
+    }
+
+    // Replace the intro animation with the underscore sprite
+    private void ReplaceIntroAnimation() {
+        GetComponent<SpriteRenderer>().sprite = _underscoreSprite;
     }
 }

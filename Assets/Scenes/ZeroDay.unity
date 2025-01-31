@@ -4573,6 +4573,9 @@ MonoBehaviour:
   _rhythmTrack: {fileID: 11400000, guid: 7cf123b3c5991e04cbb38f23c0e33cb0, type: 2}
   _speed: 0.65
   _telegraphWindow: 3
+  _waveforms: {fileID: 11400000, guid: 707612859a067124080a826f36431e9c, type: 2}
+  _waveformParent: {fileID: 1826246629}
+  _waveformObjects: []
   _newGameObjectPositionX: 13
   _notesParent: {fileID: 1800348204}
   _notePrefab: {fileID: 1385162466631665725, guid: 67de581beb250be44bef1443835daebf, type: 3}
@@ -4714,8 +4717,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435468c220bb689459f989481344cb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _introAnimationSprite: {fileID: 1658040518}
   _playerSprite: {fileID: 1795848367}
   _noteHitSprite: {fileID: 1728410999}
+  _underscoreSprite: {fileID: 2800000, guid: 4a8395854346fc6468d37277d9273c28, type: 3}
 --- !u!1 &1667900704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5052,7 +5057,7 @@ Transform:
   m_GameObject: {fileID: 1728410996}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5297,7 +5302,7 @@ Transform:
   m_GameObject: {fileID: 1795848365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5381,6 +5386,37 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800348204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1826246629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1826246630}
+  m_Layer: 0
+  m_Name: Waveforms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1826246630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826246629}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -6557,7 +6593,7 @@ Transform:
   m_GameObject: {fileID: 2126646027}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.2555, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6921,4 +6957,5 @@ SceneRoots:
   - {fileID: 846588981}
   - {fileID: 1658040519}
   - {fileID: 1800348205}
+  - {fileID: 1826246630}
   - {fileID: 2826595368881356779}

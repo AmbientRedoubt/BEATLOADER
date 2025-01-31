@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(LevelAudioManager))]
-[RequireComponent(typeof(NoteManager))]
+[RequireComponent(typeof(NoteWaveformManager))]
 public class LevelManager : MonoBehaviour {
     private float _levelStartTime;
     [SerializeField] private Scene _nextScene;

@@ -162,12 +162,12 @@ TextureImporter:
       name: wave7_down_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 108
-        width: 15
-        height: 20
+        x: 0
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: wave7_down_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 128
-        width: 6
-        height: 7
+        x: 12
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: wave7_down_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 108
-        width: 6
-        height: 13
+        x: 24
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: wave7_down_3
       rect:
         serializedVersion: 2
-        x: 62
-        y: 94
-        width: 7
-        height: 14
+        x: 36
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: wave7_down_4
       rect:
         serializedVersion: 2
-        x: 43
-        y: 93
-        width: 6
-        height: 13
+        x: 48
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: wave7_down_5
       rect:
         serializedVersion: 2
-        x: 66
-        y: 73
-        width: 16
-        height: 20
+        x: 60
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: wave7_down_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 26
-        width: 38
-        height: 51
+        x: 72
+        y: 0
+        width: 10
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,116 +308,6 @@ TextureImporter:
       bones: []
       spriteID: 3d7c9d2dacc321180800000000000000
       internalID: -9146181051417507885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave7_down_7
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 77
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf320bf9ad940ba00800000000000000
-      internalID: 770196739611173884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave7_down_8
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 43
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79e9130166d3e1b00800000000000000
-      internalID: 801145292286172823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave7_down_9
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 0
-        width: 10
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5cc13e1615d885d90800000000000000
-      internalID: -7108776631130186555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave7_down_10
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 26
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e693cf65358b4d700800000000000000
-      internalID: 564278521409321326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave7_down_11
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 9
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5deafe82a0ce7e890800000000000000
-      internalID: -7428709531943719211
       vertices: []
       indices: 
       edges: []
@@ -438,16 +328,11 @@ TextureImporter:
     nameFileIdTable:
       wave7_down_0: 9131161350693397901
       wave7_down_1: -5375728638487345241
-      wave7_down_10: 564278521409321326
-      wave7_down_11: -7428709531943719211
       wave7_down_2: 1672339490431451432
       wave7_down_3: -3182663158783411725
       wave7_down_4: -2236073883721902796
       wave7_down_5: -340314777013438971
       wave7_down_6: -9146181051417507885
-      wave7_down_7: 770196739611173884
-      wave7_down_8: 801145292286172823
-      wave7_down_9: -7108776631130186555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

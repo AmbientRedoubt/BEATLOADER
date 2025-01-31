@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356432c8c52e926428842dde3b938e76, type: 3}
+  m_Name: Waveforms
+  m_EditorClassIdentifier: 
+  Waveforms:
+  - Length: 3
+    Type: 0
+    GameObjects:
+    - {fileID: 6866470396398343323, guid: 9cf54a0605bc19c498f2961fe4758d76, type: 3}
+    - {fileID: 6270525121685162418, guid: 61729a53ba399dc44b8fdcef9de8a48c, type: 3}
+    - {fileID: 599599071044981339, guid: 519063916f3d59941b55a3cbea55bbd1, type: 3}
+    - {fileID: 6959921189163869023, guid: f2f879def448eef4283f9d163d5e7735, type: 3}
+    - {fileID: 3880122149716743165, guid: eba961974c944724eb42c32148aef8a7, type: 3}
+  - Length: 3
+    Type: 1
+    GameObjects:
+    - {fileID: 538336088824055546, guid: cac3aaad53b46664285167a3db188ff3, type: 3}
+    - {fileID: 1543349787368467432, guid: ccb896bc8bbcc0947a36a49bbb073919, type: 3}
+    - {fileID: 8417013052033778162, guid: 750df5caa9878754ea36da40ec749342, type: 3}
+    - {fileID: 5188693479158385371, guid: e5293f2f69f071a44b38a60145c60ed4, type: 3}
+    - {fileID: 5445529020631746955, guid: a1e643f532dde814e955130db9fd6049, type: 3}
+  - Length: 4
+    Type: 0
+    GameObjects:
+    - {fileID: 1046926678220160582, guid: 7d35f44f80f6e9b4a976d07f87a25e69, type: 3}
+    - {fileID: 7888399486985567469, guid: a410e918cd4ea544eb9b4ca7aaf4b8c4, type: 3}
+    - {fileID: 8079029804685325593, guid: 9be955b57393d7948a5cb8c0c6cf1461, type: 3}
+  - Length: 4
+    Type: 1
+    GameObjects:
+    - {fileID: 1347443068768055080, guid: 6e05afa20c2ebee42b7a992652ef7b0c, type: 3}
+    - {fileID: 672661730248317377, guid: a4a3f802941fd3b469745f0ee29262eb, type: 3}
+    - {fileID: 8874514952666453814, guid: 6c4b67c1e74c9ae4aab0d12574391577, type: 3}
+  - Length: 5
+    Type: 0
+    GameObjects:
+    - {fileID: 2046021121681832508, guid: 83e64c9bd3c32db4d8db505b99ace91a, type: 3}
+    - {fileID: 7478618191067078862, guid: 5faa49bf801017a4db16df847070661c, type: 3}
+    - {fileID: 3765676005473138433, guid: 8a810ecb745ddf3428bcd4f77901b477, type: 3}
+  - Length: 5
+    Type: 1
+    GameObjects:
+    - {fileID: 7791451650562688926, guid: 490959d7fbca0ec46914eb10951eea78, type: 3}
+    - {fileID: 5701493291345722990, guid: cf8670806eb98054398d0503da328bbf, type: 3}
+  - Length: 7
+    Type: 0
+    GameObjects:
+    - {fileID: 3348668520516640227, guid: 2d47d37e43cd0514bb2ac2b224d9d926, type: 3}
+  - Length: 7
+    Type: 1
+    GameObjects:
+    - {fileID: 8892875782625791684, guid: 66fdd9fe333db4347a7d285948c3da92, type: 3}

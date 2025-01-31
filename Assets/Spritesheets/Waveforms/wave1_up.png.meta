@@ -131,10 +131,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 34
+        width: 10
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,6 +143,50 @@ TextureImporter:
       bones: []
       spriteID: 8bf5d2b3fec239270800000000000000
       internalID: 8255991947901886392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave1_up_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d134ebafeef694ea90b17393d61e1a
+      internalID: -456767991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave1_up_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03c966f3a0c3da43a802bb2a73bac04
+      internalID: 1868271645
       vertices: []
       indices: 
       edges: []
@@ -162,6 +206,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       wave1_up_0: 8255991947901886392
+      wave1_up_1: -456767991
+      wave1_up_2: 1868271645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -131,10 +131,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 34
-        height: 23
+        width: 10
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,6 +143,50 @@ TextureImporter:
       bones: []
       spriteID: 346a5a98b8d441180800000000000000
       internalID: -9145599681577507261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave5_down_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 10
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c9570779833d64783f1f4c34a896c3
+      internalID: -1394443039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave5_down_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 10
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2538885dfb24859488586c1e49b99f4f
+      internalID: -1530115887
       vertices: []
       indices: 
       edges: []
@@ -162,6 +206,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       wave5_down_0: -9145599681577507261
+      wave5_down_1: -1394443039
+      wave5_down_2: -1530115887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

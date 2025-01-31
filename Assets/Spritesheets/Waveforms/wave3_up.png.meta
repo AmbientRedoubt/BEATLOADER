@@ -132,12 +132,12 @@ TextureImporter:
       name: wave3_up_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 36
-        width: 7
-        height: 21
+        x: 0
+        y: 0
+        width: 10
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -154,20 +154,42 @@ TextureImporter:
       name: wave3_up_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 19
-        width: 34
-        height: 14
+        x: 12
+        y: 0
+        width: 10
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef4710dcd84d2d870800000000000000
+      spriteID: 4268eef43d8f09c47bb0d31a517654f3
       internalID: 8706254735155492094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave3_up_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 10
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe10ecc5e0f52be4fa16f9fba2b3a68c
+      internalID: -1700333948
       vertices: []
       indices: 
       edges: []
@@ -188,6 +210,7 @@ TextureImporter:
     nameFileIdTable:
       wave3_up_0: -3607233107734850664
       wave3_up_1: 8706254735155492094
+      wave3_up_2: -1700333948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Notes and Waveforms
+    uniqueID: 510063505
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2851106689
+    locked: 0
   - name: UI
     uniqueID: 1556914693
     locked: 0
